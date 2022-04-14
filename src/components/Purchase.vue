@@ -4,11 +4,10 @@
 
 <script>
 export default {
-    name: "App"
+    name: "Purchase"
 }
 </script>
 
-<style>
-@import './assets/base.css';
+<style scoped>
 
 </style>
