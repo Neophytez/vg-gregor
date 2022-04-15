@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
         <div class="container-fluid">
             <a href="#">
                 <img src="/images/logo.jpg" alt="VG.Gregor">
