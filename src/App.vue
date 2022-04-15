@@ -1,5 +1,6 @@
 <template>
     <TopBar></TopBar>
+    <Footer></Footer>
 </template>
 
 <script>
