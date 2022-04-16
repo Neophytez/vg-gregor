@@ -1,0 +1,1001 @@
+id,title,price,sale_price,media_type,stock
+1,Messages Deleted,10,7.63,vhs,true
+2,Broken Lance,29,21.15,bluray,true
+3,Josie and the Pussycats,22,16.51,dvd,true
+4,Mildred Pierce,14,10.49,vhs,false
+5,Los Angeles Plays Itself,26,21.40,bluray,false
+6,Valley of the Bees (Údolí vcel),28,19.82,vhs,true
+7,Alter Egos,23,16.71,bluray,true
+8,Twice in a Lifetime,26,20.89,vhs,true
+9,"Town Called Panic, A (Panique au village)",12,,dvd,true
+10,Charlie Chan in Rio,29,20.30,bluray,false
+11,Dracula Has Risen from the Grave,14,11.03,bluray,false
+12,"Die Bademeister – Weiber, saufen, Leben retten",30,24.28,vhs,false
+13,Love Exposure (Ai No Mukidashi),30,26.28,bluray,true
+14,Kummelin jackpot,15,11.23,vhs,false
+15,"Girlfriend Experience, The",15,,bluray,true
+16,Tube Tales,17,,vhs,true
+17,"Legend of Lizzie Borden, The",20,16.62,bluray,false
+18,Nancy Drew: Detective,17,13.54,dvd,false
+19,Jack Frost,21,,dvd,false
+20,Special When Lit,20,14.88,vhs,false
+21,Stepfather II,16,,vhs,true
+22,"Promised Life, The (Vie promise, La)",10,8.15,vhs,true
+23,Crimes of the Heart,22,,bluray,false
+24,"Protector, The (a.k.a. Warrior King) (Tom yum goong)",23,19.14,vhs,true
+25,Jacob's Ladder,14,11.51,vhs,true
+26,London After Midnight,28,,vhs,false
+27,Exiles (Exils),13,10.10,vhs,true
+28,"Woman, a Gun and a Noodle Shop, A (San qiang pai an jing qi)",22,,dvd,false
+29,Comin' at Ya!,18,,vhs,false
+30,Sodom and Gomorrah,25,,vhs,false
+31,"American President, The",19,14.64,vhs,true
+32,"Brothers Rico, The",11,,bluray,true
+33,"Seventh Continent, The (Der siebente Kontinent)",30,24.03,vhs,false
+34,Man on a Ledge,23,,dvd,true
+35,"Little Bit of Soul, A",17,,vhs,false
+36,House of Strangers,26,,vhs,false
+37,Mein Kampf,12,,vhs,true
+38,La Bandera,23,17.96,vhs,true
+39,Nicht alle waren Mörder,16,,vhs,false
+40,Kestrel's Eye (Falkens öga),28,,bluray,false
+41,Fast Life,21,,bluray,true
+42,"Battle for Marjah, The",16,,vhs,false
+43,Burn Paris Burn,10,,dvd,false
+44,Music for One Apartment and Six Drummers,29,25.11,bluray,true
+45,Summer Holiday,11,9.70,vhs,false
+46,"Indian in the Cupboard, The",30,,dvd,true
+47,Aqua Teen Hunger Force Colon Movie Film for Theaters,23,,bluray,false
+48,Far from the Madding Crowd,22,,dvd,true
+49,No Country for Old Men,26,,bluray,true
+50,Bogus,21,16.72,dvd,true
+51,"Nibelungen: Siegfried, Die",23,,bluray,false
+52,Ernest Saves Christmas,16,13.29,bluray,false
+53,"Shine of Rainbows, A",24,,bluray,false
+54,Des fleurs pour Algernon,21,,vhs,true
+55,Love Potion #9,27,23.42,dvd,false
+56,Girl Play,14,,dvd,false
+57,Kids Return (Kizzu ritân),10,,bluray,true
+58,"Breaktime, The (Zang-e Tafrih) (Recess)",11,,dvd,false
+59,Evil Under the Sun,23,,bluray,true
+60,Empty Nest (El nido vacío),28,,vhs,false
+61,Patema Inverted,28,,dvd,true
+62,Primary Colors,15,,vhs,true
+63,Making the Boys ,20,16.90,dvd,false
+64,Red Cliff (Chi bi),28,21.95,vhs,false
+65,"Koruto wa ore no pasupooto (Colt Is My Passport, A)",15,,bluray,false
+66,Mission London,22,,vhs,false
+67,Love Hina Spring Special,26,,bluray,true
+68,Heist,29,24.92,vhs,true
+69,Starflight: The Plane That Couldn't Land,28,,vhs,true
+70,"Treatment, The",18,,vhs,true
+71,Broken Lance,20,14.60,bluray,false
+72,The Borderlands,26,19.51,dvd,false
+73,Death by Hanging (Koshikei),16,,bluray,false
+74,"Best Exotic Marigold Hotel, The",29,,vhs,false
+75,Bedlam,19,13.70,bluray,true
+76,"Spitfire Grill, The",11,,dvd,true
+77,Black Rose Ascension (Kurobara shôten),23,17.75,dvd,true
+78,Coriolanus,13,11.40,vhs,false
+79,Täällä Pohjantähden alla II ,24,18.89,vhs,true
+80,Girls About Town,26,,bluray,false
+81,"Dancing Masters, The",27,,dvd,true
+82,Tremors 4: The Legend Begins,17,15.21,dvd,true
+83,Vertigo,28,,vhs,false
+84,Thirst,13,,dvd,true
+85,The Phantom Light,27,20.24,dvd,true
+86,Old San Francisco,14,11.96,dvd,false
+87,April's Shower,20,,vhs,true
+88,Building the Inferno: Nobuo Nakagawa and the Making of 'Jigoku',12,,bluray,false
+89,Cold Creek Manor,29,,bluray,true
+90,Quiz Show,16,,bluray,false
+91,Enlightenment Guaranteed (Erleuchtung Garantiert),18,,dvd,false
+92,Toward the Unknown,10,,bluray,true
+93,"Education of Charlie Banks, The",15,11.00,dvd,true
+94,Dragon Ball Z: Broly - The Legendary Super Saiyan (Doragon bôru Z 8: Moetsukiro!! Nessen retsusen-chô gekisen),15,12.46,dvd,false
+95,Shadows (Cienie),21,,dvd,false
+96,"Bingo Long Traveling All-Stars & Motor Kings, The",19,13.95,dvd,false
+97,"Game Plan, The",16,,dvd,true
+98,10.5,29,22.17,vhs,true
+99,Berlin: Symphony of a Great City (Berlin: Die Sinfonie der Großstadt),18,14.99,bluray,false
+100,Bucktown,29,,bluray,false
+101,"Little World of Don Camillo, The (Petit monde de Don Camillo, Le)",10,8.25,bluray,true
+102,That Darn Cat!,17,,vhs,true
+103,Project A 2 ('A' gai wak juk jap),17,14.55,dvd,false
+104,3 Days to Kill,11,9.64,dvd,true
+105,Feeding Frenzy,27,21.98,vhs,false
+106,Nothing,24,17.41,dvd,true
+107,"Long and Short of It, The",11,,bluray,true
+108,99 and 44/100% Dead,25,20.06,dvd,true
+109,People of the Wind,20,15.07,vhs,false
+110,My Love Has Been Burning (Waga koi wa moenu),16,,vhs,true
+111,Model,11,,vhs,false
+112,Whip It,17,,dvd,true
+113,Skippy,13,,dvd,true
+114,Somewhere Under the Broad Sky,20,,bluray,true
+115,Man of the Year,17,14.34,dvd,false
+116,Forgotten Silver,23,,dvd,false
+117,Conspiracy,14,,dvd,false
+118,Borrowed Time,20,,dvd,true
+119,"Land Before Time, The",20,,vhs,false
+120,"True Story of Jesse James, The",18,15.04,vhs,true
+121,"Navigator, The",22,,vhs,true
+122,Night Has a Thousand Eyes,10,,dvd,false
+123,Reasonable Doubt,25,,vhs,false
+124,"War Tapes, The",11,,dvd,false
+125,"Man with the Golden Gun, The",24,17.04,vhs,true
+126,Last Winter (L'hiver dernier),10,,bluray,false
+127,In the Valley of Elah,21,14.90,dvd,false
+128,"Villain, The (Ek Villain)",21,15.61,dvd,true
+129,"Good Morning, Miss Dove",26,18.67,vhs,false
+130,101 Dalmatians,21,15.34,bluray,true
+131,Who's That Girl?,20,,vhs,true
+132,Blood Runs Cold,21,17.43,dvd,true
+133,Run Sister Run!,18,13.06,dvd,false
+134,Our Mother's House,19,15.83,dvd,true
+135,Life's a Breeze,16,,vhs,true
+136,I'm All Right Jack,23,19.43,bluray,false
+137,Hamlet,22,,bluray,false
+138,Carrie,10,,vhs,true
+139,State of Grace,22,16.41,dvd,true
+140,Long John Silver,25,18.38,dvd,false
+141,Night of the Living Dorks,30,,dvd,true
+142,American Sniper,27,19.48,bluray,true
+143,Fail-Safe,19,,dvd,false
+144,Patton Oswalt: No Reason to Complain,23,,bluray,true
+145,Macheads,30,22.90,dvd,true
+146,Pressure Point ,21,14.92,vhs,false
+147,"Time to Love and a Time to Die, A",19,15.29,vhs,true
+148,"Last Godfather, The",22,16.18,vhs,false
+149,Drinking Buddies,30,23.98,vhs,false
+150,Confessions of a Driving Instructor,23,,vhs,true
+151,"Spy in Black, The",16,14.02,vhs,false
+152,Donovan's Brain,10,7.22,dvd,true
+153,Jim Jefferies: Alcoholocaust,19,,vhs,false
+154,"When You Comin' Back, Red Ryder?",12,,vhs,false
+155,Doghouse,22,,dvd,false
+156,Of Unknown Origin,14,11.70,bluray,false
+157,Kill a Rat,28,,vhs,false
+158,Helsinki Napoli All Night Long,19,,dvd,true
+159,Faces of Death: Fact or Fiction?,11,8.11,bluray,false
+160,"Hunted, The",20,,dvd,true
+161,"Statement, The",29,26.07,dvd,true
+162,Addicted to Love,29,20.63,bluray,false
+163,Peter Ibbetson,11,,dvd,true
+164,Remember the Titans,15,12.98,bluray,true
+165,"Four Musketeers, The",10,,vhs,false
+166,Subject Two,25,19.11,bluray,true
+167,"Perfect Fake, A",22,,bluray,false
+168,September,16,13.41,vhs,false
+169,Like Crazy,17,12.62,bluray,true
+170,Lakota Woman: Siege at Wounded Knee,17,14.54,vhs,true
+171,Operation Endgame,18,14.77,vhs,false
+172,Mile... Mile & a Half,18,,bluray,true
+173,"Man from Down Under, The",30,,bluray,true
+174,Battle Beyond the Stars,14,,bluray,false
+175,Ronal the Barbarian,22,,vhs,false
+176,And God Created Woman,30,,bluray,false
+177,Shiver (Eskalofrío),28,,vhs,false
+178,"Eleventh Year, The (Odinnadtsatyy) ",13,,vhs,false
+179,"Living Dead Girl, The (Morte Vivante, La)",16,13.27,vhs,false
+180,Perfect Sense,23,19.39,vhs,false
+181,Antonio Gaudí,23,19.72,vhs,false
+182,Four more years (Fyra år till),19,,vhs,true
+183,Bad 25,29,21.02,bluray,true
+184,Howard Zinn: You Can't Be Neutral on a Moving Train,11,8.99,dvd,true
+185,"Foot Fist Way, The",21,,dvd,true
+186,Wizards,25,22.07,vhs,false
+187,"Story of Ruth, The",11,,dvd,false
+188,Cocoon: The Return,23,,dvd,false
+189,Freeloaders,21,,bluray,true
+190,Imagine,25,21.47,bluray,true
+191,Relative Strangers,29,,dvd,false
+192,'Salem's Lot,12,8.90,vhs,true
+193,"Locusts, The",25,19.92,dvd,true
+194,The Young Savages,26,,dvd,true
+195,Chicago Joe and the Showgirl,28,24.55,bluray,false
+196,Snake River Desperadoes,27,23.03,bluray,false
+197,Tai-Pan,16,13.41,bluray,true
+198,Super High Me,19,,vhs,true
+199,Prelude to a Kiss,24,,vhs,true
+200,Fifty Shades of Grey,28,,dvd,false
+201,Window to Paris (Okno v Parizh),22,18.07,bluray,false
+202,Humanoids from the Deep,23,17.78,vhs,true
+203,"Legend of Zorro, The",12,,dvd,true
+204,Kung Pow: Enter the Fist,14,11.89,bluray,false
+205,"Commune, La (Paris, 1871)",20,,dvd,true
+206,Dhoom,23,,vhs,false
+207,Private Hell 36,27,22.06,bluray,false
+208,"Runner, The (Davandeh)",17,,dvd,false
+209,Brothers,25,19.42,vhs,true
+210,Sister My Sister,21,,bluray,false
+211,Fierce People,26,18.87,vhs,true
+212,"Wildcat, The (Die Bergkatze)",14,11.10,vhs,true
+213,"Boat, The",20,,vhs,true
+214,"Getting Go, the Go Doc Project",18,,dvd,false
+215,Eloise at the Plaza,28,,dvd,true
+216,"Die, Mommie, Die",28,,dvd,true
+217,Evocateur: The Morton Downey Jr. Movie,19,15.19,bluray,true
+218,"Human Condition III, The (Ningen no joken III)",27,22.83,dvd,true
+219,AVP: Alien vs. Predator,29,,bluray,true
+220,Go West,15,,dvd,true
+221,Little Big League,19,,dvd,false
+222,The Good Son,25,,bluray,true
+223,"Beach, The",20,17.24,bluray,true
+224,Prime Suspect 3,15,11.81,vhs,false
+225,Eat Pray Love,12,10.77,bluray,false
+226,30 Days of Night: Dark Days,17,,bluray,true
+227,Two Women,22,,dvd,false
+228,Lazybones,10,8.28,dvd,false
+229,Buddy Buddy,22,,bluray,true
+230,Mystery Train,10,,bluray,false
+231,"Night Visitor, The",28,21.70,dvd,false
+232,11 Harrowhouse,26,,dvd,true
+233,Super,21,,bluray,false
+234,Twilight of a Woman's Soul (Sumerki zhenskoi dushi),17,11.97,dvd,true
+235,Captain Phillips,14,,dvd,false
+236,My Way Home (Így jöttem) ,11,,vhs,false
+237,Grind,28,,dvd,true
+238,I Married a Witch,28,21.51,dvd,true
+239,Used Cars,18,,bluray,false
+240,"Mothman Prophecies, The",24,17.33,vhs,false
+241,Avanti!,15,13.08,dvd,true
+242,Aladdin,10,,bluray,true
+243,I Never Sang for My Father,30,21.31,bluray,false
+244,Bunny and the Bull,27,,dvd,false
+245,Stick It,12,,vhs,false
+246,"Spirit of the Beehive, The (Espíritu de la colmena, El)",27,,dvd,true
+247,"Walker, The",17,13.40,bluray,true
+248,Road Trip,13,9.37,bluray,true
+249,The Great Raid,17,,bluray,true
+250,Leap of Faith,30,23.46,dvd,false
+251,"Green Wave, The",20,,vhs,true
+252,"Devil's Ground, The",16,11.99,bluray,false
+253,Wanda Sykes: Sick and Tired,15,10.95,vhs,false
+254,Death Wish 5: The Face of Death,10,,bluray,true
+255,Sunes sommar,12,10.29,dvd,true
+256,Des roses en hiver,26,,vhs,true
+257,Three (Tri),29,23.39,dvd,true
+258,Desire Under the Elms,18,14.41,vhs,false
+259,Cold Prey II (Fritt Vilt II),11,,vhs,false
+260,"Climb, The",16,12.09,vhs,true
+261,Aaltra,13,11.05,dvd,false
+262,Welcome to the Jungle,28,,vhs,false
+263,Special,11,7.99,bluray,true
+264,American Pie Presents Beta House (American Pie 6: Beta House),10,,dvd,false
+265,"Blue Max, The",29,20.94,dvd,false
+266,Homicide,15,,dvd,true
+267,"Reflecting Skin, The",27,24.02,vhs,false
+268,"Strawberry Blonde, The",28,,vhs,true
+269,Scourge,19,14.68,vhs,false
+270,"Duchess, The",11,,vhs,true
+271,It Felt Like a Kiss,24,19.48,vhs,false
+272,Cold Prey III (Fritt Vilt III),24,17.12,bluray,true
+273,Shadows and Fog,21,18.19,dvd,true
+274,That Lady in Ermine,21,,vhs,true
+275,"Angel Levine, The",28,,vhs,false
+276,"Ay, Carmela! (¡Ay, Carmela!)",28,,dvd,true
+277,Versus,16,12.89,bluray,false
+278,"Defender, The",29,21.87,dvd,true
+279,På sista versen,16,,dvd,true
+280,Berlin: Symphony of a Great City (Berlin: Die Sinfonie der Großstadt),27,21.14,dvd,true
+281,"Breaking Point, The",21,16.39,vhs,true
+282,Thrashin',27,19.41,dvd,false
+283,Cassandra's Dream,13,,vhs,false
+284,Exodus: Gods and Kings,28,22.56,vhs,false
+285,"Silence of the Sea, The (Le silence de la mer)",13,10.54,dvd,true
+286,Don't Tempt Me (Sin noticias de Dios),13,11.54,vhs,true
+287,Extreme Days,20,14.41,vhs,false
+288,"Soviet Story, The",14,,vhs,true
+289,Mortdecai,29,,vhs,true
+290,Last Call (Hoogste tijd),21,,vhs,false
+291,Small Cuts (Petites coupures),21,,bluray,true
+292,"Greatest, The",16,12.34,bluray,false
+293,Jupiter Ascending,14,,bluray,true
+294,No One Knows About Persian Cats (Kasi az gorbehaye irani khabar nadareh),25,20.37,vhs,true
+295,Rat Pfink a Boo Boo,13,,vhs,false
+296,Plastic Paradise: The Great Pacific Garbage Patch,22,19.04,bluray,false
+297,I Shot Jesse James,23,19.37,dvd,true
+298,"Children of Glory (Szabadság, szerelem)",11,,dvd,false
+299,Kolmistaan,23,,bluray,true
+300,Biggie and Tupac,14,10.85,vhs,true
+301,"Pill, The",18,,dvd,false
+302,George of the Jungle,20,,vhs,false
+303,What No One Knows (Det som ingen ved),21,17.96,bluray,true
+304,Red Scorpion,15,10.89,dvd,true
+305,"Promise, The (Versprechen, Das)",13,10.28,vhs,false
+306,"Unknown Soldier, The (Tuntematon sotilas)",12,,dvd,true
+307,Edge of Seventeen,17,14.24,dvd,false
+308,Sabretooth,19,14.04,dvd,false
+309,Betty,22,,bluray,true
+310,Infamous,21,,bluray,true
+311,Confess,27,19.80,bluray,false
+312,Holiday (Jour de fête),24,17.75,vhs,false
+313,District 13 (Banlieue 13),26,19.11,vhs,true
+314,The Perfect World of Kai,24,,bluray,false
+315,"...All the Marbles (California Dolls, The)",19,15.84,vhs,false
+316,"Leopard Man, The",11,,vhs,true
+317,P.S. I Love You,14,,vhs,true
+318,Chaos,23,,dvd,true
+319,If You Don't Stop It... You'll Go Blind!!!,18,15.22,bluray,true
+320,"Eighth Day, The (Huitième jour, Le)",26,21.25,vhs,false
+321,Man on a Ledge,15,13.45,vhs,false
+322,"Trip, The",18,13.85,bluray,true
+323,Felon,28,20.18,dvd,false
+324,Effi Briest (Fontane - Effi Briest),25,,dvd,true
+325,"Great Locomotive Chase, The",21,,dvd,false
+326,Eyes Wide Shut,28,,dvd,false
+327,King of New York,14,11.32,vhs,true
+328,Peter and Vandy,29,,bluray,true
+329,Scream of Stone (Cerro Torre: Schrei aus Stein),25,,bluray,false
+330,Dune,19,,vhs,true
+331,"Allnighter, The",23,17.76,vhs,false
+332,Viy,24,21.28,dvd,true
+333,Message in a Bottle,15,,dvd,false
+334,8 Heads in a Duffel Bag,16,,dvd,false
+335,Two Rode Together,27,,vhs,false
+336,A Summer in St. Tropez,22,,dvd,false
+337,Went to Coney Island on a Mission From God... Be Back by Five,14,,vhs,false
+338,Dakota Skye,11,,vhs,true
+339,Female Prisoner #701: Scorpion (Joshuu 701-gô: Sasori),28,19.71,dvd,true
+340,Clown,30,,bluray,false
+341,Narrien illat ,17,12.64,vhs,false
+342,Thunder Bay,12,9.48,bluray,true
+343,Aakrosh,28,25.05,bluray,true
+344,Chasing Papi (a.k.a. Papi Chulo),22,,dvd,true
+345,American Heist,11,,vhs,false
+346,Prefontaine,22,,bluray,false
+347,Cazuza - O Tempo Não Pára,16,,dvd,true
+348,"Strangler, The",12,,dvd,false
+349,Lovers and Lollipops,21,15.29,dvd,true
+350,Chain Reaction,26,22.87,dvd,false
+351,Slingshot Hip Hop,10,,bluray,true
+352,A Matador's Mistress,20,,bluray,true
+353,Red Planet,20,,dvd,false
+354,Within the Woods,20,17.10,dvd,false
+355,Prodigal Sons,11,,bluray,true
+356,"Devil Inside, The",19,15.33,vhs,true
+357,Critical Care,19,,vhs,true
+358,Never Sleep Again: The Elm Street Legacy,12,8.50,vhs,true
+359,Antibodies (Antikörper),30,,bluray,false
+360,"Legend of Hell House, The",29,25.94,dvd,false
+361,Ironclads,13,,dvd,false
+362,Asterix in Britain (Astérix chez les Bretons),18,12.89,bluray,true
+363,Don't Blink,30,24.05,dvd,true
+364,Topper,27,,dvd,true
+365,White Irish Drinkers,23,,vhs,false
+366,Life As a Fatal Sexually Transmitted Disease (Zycie jako smiertelna choroba przenoszona droga plciowa),17,14.96,dvd,true
+367,Godzilla vs. The Sea Monster (Gojira-Ebira-Mosura: Nankai no daiketto),29,26.07,vhs,true
+368,Treeless Mountain,14,10.62,vhs,false
+369,All for the Winner (Dou sing),10,8.29,vhs,false
+370,Vampire Hunter D: Bloodlust (Banpaia hantâ D),16,,vhs,false
+371,Two Weeks in Another Town,10,7.12,dvd,true
+372,"Final Season, The",30,21.99,bluray,true
+373,"Life of Another, The (La vie d'une autre)",13,10.64,dvd,true
+374,Love Object,25,19.07,vhs,true
+375,Hard Times,28,,bluray,false
+376,Warlock: The Armageddon,23,,bluray,true
+377,Kids of the Round Table,21,,dvd,false
+378,"Toy, The",10,7.09,dvd,true
+379,Fuga de cerebros,21,16.53,dvd,true
+380,Dream Man,30,26.70,dvd,false
+381,Who Framed Roger Rabbit?,17,13.04,bluray,true
+382,Anchors Aweigh,22,18.27,dvd,true
+383,Son of God,12,9.61,vhs,false
+384,California Split,19,13.80,dvd,true
+385,Storyville,17,,dvd,true
+386,Fata Morgana,22,,vhs,true
+387,Werner - Gekotzt wird später,24,,dvd,true
+388,Dragon ball Z 04: Lord Slug,15,,vhs,false
+389,"Grand Day Out with Wallace and Gromit, A",14,10.94,vhs,true
+390,Afterburn,24,20.63,vhs,false
+391,"Lineup, The",14,10.14,dvd,true
+392,There's Something About Mary,16,12.75,bluray,false
+393,Grandmother,10,,bluray,false
+394,Fingers at the Window,30,,bluray,false
+395,Bone,17,,vhs,true
+396,Bones Brigade: An Autobiography,20,,vhs,false
+397,Zandalee,25,,vhs,true
+398,Cookie,12,9.93,dvd,true
+399,"Power of Nightmares, The: The Rise of the Politics of Fear",25,,dvd,false
+400,Iron Maiden: Flight 666,27,20.87,vhs,true
+401,Kill Me Please,26,,dvd,false
+402,Conversations with Other Women,26,21.78,bluray,true
+403,A Flintstones Christmas Carol,25,,bluray,true
+404,"Dogwalker, The",30,,bluray,false
+405,Razorback,14,11.12,dvd,true
+406,Endless Love,14,11.81,dvd,false
+407,One of Our Dinosaurs Is Missing,15,,dvd,true
+408,Fled,27,,dvd,false
+409,"Bunch Of Amateurs, A",17,,dvd,true
+410,"Principal, The",12,8.69,dvd,false
+411,Not Without My Daughter,28,20.59,dvd,false
+412,Under Siege,13,10.36,dvd,false
+413,Hedwig and the Angry Inch,30,,dvd,false
+414,Carol Channing: Larger Than Life,16,,vhs,true
+415,Navajo Joe,23,17.58,vhs,false
+416,Let's Talk About Sex,29,24.89,bluray,false
+417,"District, The (Nyócker!)",19,,dvd,false
+418,Food (Jídlo),27,21.04,bluray,true
+419,"Hunchback, The",14,,bluray,true
+420,Megiddo: The Omega Code 2,17,13.84,vhs,false
+421,America's Heart and Soul,25,18.14,vhs,true
+422,Twilight of the Ice Nymphs,30,,dvd,false
+423,"Big Tease, The",13,10.14,dvd,true
+424,"Hunting and Gathering (Ensemble, c'est tout)",14,,dvd,false
+425,Traveller,20,,bluray,false
+426,Beloved Berlin Wall (Liebe Mauer),20,,dvd,true
+427,Rebirth of Mothra III,17,12.91,bluray,true
+428,To the Limit (Am Limit),25,18.59,bluray,true
+429,Tipping the Velvet,16,12.80,bluray,false
+430,Felidae,18,,vhs,false
+431,Twice Born (Venuto al mondo),16,,dvd,true
+432,The Mountain of the Cannibal God,13,9.88,bluray,true
+433,Free Birds,27,,bluray,false
+434,Beneath the Planet of the Apes,30,24.69,bluray,false
+435,Mr. Wrong,18,15.40,vhs,false
+436,Tennessee,25,18.90,bluray,false
+437,The Raid: Redemption,28,,dvd,true
+438,Dragon Ball Z: Fusion Reborn (Doragon bôru Z 12: Fukkatsu no fyushon!! Gokû to Bejîta),23,,vhs,false
+439,Return to Peyton Place,10,8.89,dvd,false
+440,Industrial Symphony No. 1: The Dream of the Brokenhearted,14,10.41,bluray,true
+441,Woman of the Year,14,12.33,vhs,false
+442,Scarlet Street,16,13.38,dvd,true
+443,Restraint,27,22.00,bluray,false
+444,"Love God?, The",23,19.71,dvd,false
+445,Pineapple Express,13,,bluray,false
+446,Make Them Die Slowly (Cannibal Ferox),17,,bluray,true
+447,Adam and Dog,21,16.73,vhs,false
+448,"Big Heat, The",16,,bluray,true
+449,Summer of Blood,25,17.77,vhs,true
+450,Heaven's Burning,15,13.27,dvd,false
+451,Hara-Kiri: Death of a Samurai,21,18.41,dvd,false
+452,The Overnight,17,12.83,bluray,false
+453,Midnight Chronicles,10,,dvd,false
+454,God on Trial,23,,vhs,false
+455,Sabata,28,21.58,bluray,false
+456,Barbarians at the Gate,21,,dvd,true
+457,Casanova '70,10,7.46,bluray,false
+458,Only God Knows (Sólo Dios Sabe),28,22.34,vhs,false
+459,Damsels in Distress,20,,vhs,true
+460,You've Got Mail,27,21.86,dvd,false
+461,"Lord of the Rings: The Return of the King, The",25,21.71,bluray,false
+462,Baby Face,28,,vhs,false
+463,Little Big Man,18,13.71,bluray,true
+464,Suzy,20,,dvd,false
+465,"Secret of Santa Vittoria, The",21,,dvd,true
+466,Destination Gobi,10,7.53,dvd,false
+467,Barney's Great Adventure,17,,vhs,true
+468,Running Scared,19,15.64,vhs,false
+469,Hamlet (Gamlet),30,,bluray,true
+470,Flickering Lights (Blinkende lygter),14,12.11,dvd,true
+471,Belle and Sebastien (Belle et Sébastien),12,8.71,bluray,true
+472,The Monkey King,11,8.37,vhs,true
+473,Tu£sday,19,16.08,vhs,true
+474,Dredd,10,8.84,dvd,false
+475,On Dangerous Ground,16,,bluray,false
+476,Mandingo,10,,bluray,false
+477,Liliom,29,23.94,vhs,true
+478,Invasion of the Body Snatchers,21,15.97,bluray,false
+479,S.P.L.: Kill Zone (Saat po long),18,,vhs,false
+480,Carla's Song,16,13.26,vhs,false
+481,Wer,22,18.03,bluray,true
+482,Joe Strummer: The Future Is Unwritten,27,,bluray,false
+483,Wrong Turn 2: Dead End,29,,bluray,true
+484,Barbershop 2: Back in Business,11,9.28,dvd,false
+485,Dr. Gillespie's New Assistant,29,21.66,dvd,false
+486,Nicky's Family,18,13.50,dvd,false
+487,Pinky,16,,vhs,true
+488,Breaking and Entering,27,20.47,vhs,true
+489,"Warm December, A",23,16.32,vhs,false
+490,Jungle Book,21,,bluray,false
+491,Exit,18,,dvd,true
+492,Article 99,22,,vhs,true
+493,Mother Küsters Goes to Heaven (Mutter Küsters' Fahrt zum Himmel),19,,bluray,true
+494,Nocturno 29,20,,dvd,true
+495,"Quest, The",24,16.95,bluray,false
+496,Groove,16,,vhs,true
+497,"Two of Us, The (Le vieil homme et l'enfant)",10,,dvd,false
+498,"Westerner, The",16,,bluray,false
+499,Dilwale Dulhania Le Jayenge,18,,dvd,true
+500,"Replacement Killers, The",21,,bluray,true
+501,High Risk,20,,vhs,false
+502,Pusher,19,16.85,dvd,false
+503,Time Walker (a.k.a. Being From Another Planet),14,,vhs,false
+504,Lethal Weapon 2,15,11.31,vhs,true
+505,Montenegro,20,14.99,bluray,false
+506,Vice Versa,29,23.89,dvd,false
+507,"Man with One Red Shoe, The",14,10.43,dvd,true
+508,Nightmares in Red White & Blue: The Evolution of the American Horror Film,28,24.25,bluray,false
+509,"Girls, Les",29,22.43,dvd,true
+510,"Singing Marine, The",12,9.59,bluray,false
+511,"Blair Witch Project, The",28,19.94,vhs,true
+512,"Trouble with Angels, The",18,,dvd,true
+513,Pineapple Express,14,,bluray,false
+514,Dark Mirror,28,23.11,bluray,true
+515,Ring of Terror,19,16.09,bluray,true
+516,"Year My Parents Went on Vacation, The (O Ano em Que Meus Pais Saíram de Férias)",11,9.82,bluray,false
+517,Unaccompanied Minors,29,21.84,dvd,false
+518,"Burma Conspiracy, The (Largo Winch II)",19,15.57,bluray,false
+519,Bullet,27,19.42,vhs,false
+520,The Monkey King,17,,dvd,false
+521,A.K.,10,7.65,dvd,false
+522,Runaway Brain ,28,,vhs,true
+523,Picture Bride (Bijo photo),23,16.53,vhs,true
+524,"Silent Scream, The",14,,bluray,false
+525,"One and Only, The (Eneste ene, Den)",21,,dvd,true
+526,Trust the Man,21,,bluray,false
+527,Being Cyrus,13,11.61,vhs,false
+528,Somm,22,16.36,vhs,true
+529,"Bullet for Joey, A",26,22.09,bluray,true
+530,Dickie Roberts: Former Child Star,27,22.23,bluray,false
+531,Abbott and Costello Meet the Invisible Man,24,,bluray,false
+532,Two for the Seesaw,13,,dvd,true
+533,Fateless (Sorstalanság),18,14.02,vhs,true
+534,Sherman's March,17,,bluray,false
+535,Lucky,16,,dvd,false
+536,Voyage of the Damned,21,17.17,dvd,false
+537,Richard III,13,,dvd,false
+538,"Cry in the Dark, A",19,15.81,bluray,true
+539,Too Tough to Die: A Tribute to Johnny Ramone,11,7.84,vhs,false
+540,Major League II,16,,vhs,false
+541,Frankie Starlight,16,,dvd,false
+542,Toute la mémoire du monde,29,,vhs,true
+543,Samurai III: Duel on Ganryu Island (a.k.a. Bushido) (Miyamoto Musashi kanketsuhen: kettô Ganryûjima),11,8.18,bluray,false
+544,Eu Não Quero Voltar Sozinho (I Don't Want to Go Back Alone),22,,bluray,true
+545,I Don't Want to Sleep Alone (Hei yan quan),27,,bluray,true
+546,"Hard, Fast and Beautiful",17,13.31,dvd,false
+547,Nine Deaths of the Ninja,18,14.19,vhs,false
+548,Runaway Brain ,23,,bluray,true
+549,Reel Rock 8 ,27,,vhs,true
+550,Cool It,26,,dvd,true
+551,"Man Next Door, The (El hombre de al lado)",13,11.48,dvd,false
+552,Twin Sisters (De tweeling),11,,bluray,false
+553,Gacy,11,,vhs,false
+554,Cosas que nunca te dije (Things I Never Told You),29,,vhs,false
+555,Hope Springs,19,,vhs,true
+556,"Cat in Paris, A (Une vie de chat)",10,,vhs,false
+557,"American Tail: Fievel Goes West, An",18,,dvd,false
+558,"Light at the Edge of the World, The",13,,bluray,true
+559,"Man in the Iron Mask, The",19,,vhs,false
+560,Iria: Zeiram the Animation ,13,,vhs,false
+561,"Fan, The",22,,dvd,true
+562,"Holding, The",14,,vhs,false
+563,Asterix & Obelix: God Save Britannia (Astérix et Obélix: Au service de Sa Majesté),12,9.76,bluray,false
+564,"Deep Blue Sea, The",12,10.53,vhs,false
+565,"Donner Party, The",23,,bluray,false
+566,Sylvia and the Ghost,18,,dvd,false
+567,Seventh Horse of the Sun  (Suraj Ka Satvan Ghoda),16,,vhs,false
+568,"Villain, The",29,,dvd,false
+569,Dead Silent,17,,vhs,false
+570,Dare,23,18.71,dvd,true
+571,Anne of Green Gables,16,14.15,vhs,true
+572,Hack!,12,,dvd,false
+573,Casual Relations,15,11.58,bluray,false
+574,Foo Fighters: Back and Forth,27,23.21,dvd,true
+575,"Story of O, The (Histoire d'O)",18,15.55,dvd,true
+576,Teacher's Pet,12,10.77,bluray,false
+577,"Grey Zone, The",17,,dvd,true
+578,Thirty-Five Something (Tout pour plaire),16,,dvd,false
+579,Breakaway (Speedy Singhs),28,,bluray,false
+580,"Maze, The",20,,vhs,true
+581,Chop Shop,11,,dvd,true
+582,Rampo (a.k.a. The Mystery of Rampo),11,9.35,bluray,false
+583,Escape from Suburbia: Beyond the American Dream,15,11.33,bluray,false
+584,"Last Seven, The",29,24.48,bluray,true
+585,Deep Blue,25,,dvd,true
+586,3 Needles,28,22.96,vhs,false
+587,Laura,24,,dvd,true
+588,Monkey Business,17,13.82,bluray,true
+589,28 Days,21,,dvd,false
+590,Pocket Money,23,,vhs,false
+591,Margin Call,27,,bluray,false
+592,Beyond Re-Animator,29,,vhs,true
+593,I Can't Think Straight,20,,dvd,true
+594,"Lesson in Love, A (En lektion i kärlek)",15,10.82,bluray,false
+595,Carriage to Vienna,29,25.99,bluray,true
+596,Spencer's Mountain,10,8.18,vhs,true
+597,"Haunting, The",30,26.15,bluray,true
+598,Guinevere,25,21.25,bluray,true
+599,"Birth of a Nation, The",17,,dvd,false
+600,Bring It On: All or Nothing,12,,dvd,false
+601,Slumber Party '57,25,,bluray,false
+602,Dear White People,11,,dvd,false
+603,"Harmonists, The",30,23.50,dvd,false
+604,"Sunfish, The (Klumpfisken)",27,,vhs,true
+605,Blue City,13,9.59,dvd,false
+606,Invasion of Astro-Monster (Godzilla vs. Monster Zero) (Kaijû daisensô),12,10.05,vhs,false
+607,I Capture the Castle,26,20.09,dvd,false
+608,Ringu 2 (Ring 2),11,7.92,vhs,true
+609,Who Am I (Kein System Ist Sicher),27,19.48,dvd,false
+610,Little Dorrit,24,,vhs,true
+611,The Good Lie,18,,vhs,false
+612,Hamoun,17,15.06,bluray,true
+613,Angele,14,10.05,bluray,false
+614,Somewhere Between,19,13.41,vhs,false
+615,Shinobi No Mono 3: Resurrection (Shin shinobi no mono),11,,bluray,true
+616,Young Guns,16,13.45,vhs,false
+617,Lost in Siberia (Ausgerechnet Sibirien),18,,dvd,true
+618,"I Love You, I Love You Not",21,,dvd,false
+619,Glitterbug,25,,bluray,false
+620,Bran Nue Dae,17,13.00,dvd,true
+621,Ice Age,19,16.27,vhs,true
+622,U-571,27,22.60,dvd,false
+623,Frankenstein,17,14.97,bluray,true
+624,Lisa,27,,dvd,true
+625,Terumae romae (Thermae Romae),14,9.97,dvd,false
+626,Death in Buenos Aires (Muerte en Buenos Aires),11,7.92,dvd,false
+627,Ricky Gervais Live 3: Fame,28,23.24,bluray,false
+628,"Child, The (L'enfant)",14,12.49,vhs,true
+629,Willard,16,11.63,vhs,true
+630,The Son of the Sheik,12,10.67,vhs,true
+631,Jewtopia,13,,dvd,true
+632,Karla,13,10.10,dvd,false
+633,My Architect: A Son's Journey,20,14.56,vhs,true
+634,Frost/Nixon,21,17.33,dvd,false
+635,"Thousand Words, A",30,25.66,dvd,false
+636,Keith Lemon: The Film,26,18.49,vhs,false
+637,Allegro,19,,dvd,true
+638,"Life Is Rosy (a.k.a. Life Is Beautiful) (Vie est belle, La)",21,14.74,dvd,false
+639,Abbott and Costello in Hollywood,25,19.78,bluray,false
+640,"Glass House, The",17,,bluray,true
+641,Mall Girls (Galerianki),16,12.65,dvd,false
+642,"River, The (Joki)",10,,vhs,false
+643,One True Thing,18,,dvd,true
+644,"Lebanon, Pa.",15,10.89,bluray,false
+645,"Phantom of the Opera, The",29,,bluray,false
+646,The Land Before Time XII: The Great Day of the Flyers,13,11.09,vhs,true
+647,"Ideal Husband, An",21,18.18,dvd,true
+648,Shooting Fish,10,,vhs,false
+649,"Class, The (Klass)",30,23.96,bluray,true
+650,Twice-Told Tales,19,15.36,vhs,true
+651,"Dirty Shame, A",16,,vhs,true
+652,Wild Reeds (Les roseaux sauvages),28,,dvd,true
+653,Dames,11,9.17,dvd,true
+654,"Right Kind of Wrong, The",13,,vhs,true
+655,Smilin' Through,19,16.51,dvd,true
+656,Memories of Murder (Salinui chueok),20,,vhs,true
+657,Christmas Holiday,30,,bluray,true
+658,Devil's Playground,13,10.02,vhs,false
+659,"White Shadow, The",10,,bluray,true
+660,Hell (L'enfer),12,9.97,dvd,true
+661,Equinox,10,,vhs,true
+662,"Marrying Kind, The",29,,dvd,true
+663,Holy Smoke,25,,bluray,false
+664,Lethal Weapon 2,12,10.52,dvd,true
+665,"Situation, The",23,,vhs,true
+666,"Tale of Two Sisters, A (Janghwa, Hongryeon)",24,21.53,vhs,true
+667,Remember the Titans,21,16.74,dvd,true
+668,Racing Stripes,12,,bluray,false
+669,Burke and Hare,10,8.72,bluray,false
+670,Solino,19,16.37,vhs,true
+671,"Chronicles of Narnia: The Voyage of the Dawn Treader, The",13,,vhs,true
+672,I'm All Right Jack,20,15.11,dvd,false
+673,"Monitor, The (Babycall)",14,,dvd,true
+674,"Barkleys of Broadway, The",20,,bluray,false
+675,"Devil's Double, The",26,21.81,bluray,false
+676,Of Mice and Men,17,13.65,vhs,false
+677,Preaching to the Perverted,30,21.88,vhs,false
+678,Husk,28,22.50,bluray,false
+679,Littlerock,18,12.85,bluray,true
+680,World on a Wire (Welt am Draht),13,,vhs,true
+681,Helen of Troy,23,,dvd,false
+682,Wedding Daze,29,,bluray,false
+683,Buster Keaton: A Hard Act to Follow,30,,vhs,false
+684,Excuse Me for Living,26,20.67,dvd,false
+685,Inglourious Basterds,21,,dvd,true
+686,The Mayor of Casterbridge,27,20.80,dvd,false
+687,Small Town Murder Songs,22,18.93,dvd,true
+688,My Little Chickadee,15,,vhs,true
+689,"Favor, The",17,13.78,vhs,false
+690,"Lost World, The",13,,vhs,true
+691,Salaam Bombay!,21,18.57,bluray,false
+692,Entertaining Angels: The Dorothy Day Story,20,,dvd,true
+693,They Bite,21,,vhs,true
+694,"Kid Stays in the Picture, The",13,10.31,dvd,false
+695,Rosemary's Baby,26,,bluray,true
+696,Krull,15,10.86,vhs,false
+697,"Wedding Weekend, The (Sing Now or Forever Hold Your Peace) (Shut Up and Sing)",14,,vhs,false
+698,La vérité si je mens !,17,13.79,dvd,false
+699,"Atomic Cafe, The",21,17.41,vhs,true
+700,Black Roses ,13,11.53,dvd,false
+701,"Fighting Spirit, The",20,,bluray,true
+702,The Color of Milk,13,,vhs,true
+703,Rebirth of Mothra III,20,15.85,bluray,false
+704,Assassination of a High School President,20,,vhs,true
+705,Some Body,21,15.90,bluray,true
+706,"Krays, The",25,,vhs,true
+707,Something to Sing About,29,,dvd,true
+708,Presumed Guilty (Presunto culpable),27,22.15,dvd,false
+709,"Lacemaker, The (Dentellière, La)",27,23.13,dvd,true
+710,Going to Kansas City,30,25.52,vhs,true
+711,American Ninja 5,26,22.35,vhs,false
+712,"Bizarre, Bizarre (Drôle de drame ou L'étrange aventure de Docteur Molyneux)",30,23.31,dvd,true
+713,"Pursuit of Happyness, The",26,21.26,bluray,true
+714,Black Snake Moan,26,23.32,vhs,true
+715,Hard Times,29,23.53,bluray,true
+716,"Deer Hunter, The",19,,dvd,false
+717,Reconstituirea (Reconstruction),29,,dvd,false
+718,Demoted,12,10.66,vhs,true
+719,Kariera Nikosia Dyzmy,21,17.69,dvd,true
+720,Comandante,16,13.23,dvd,false
+721,Sylvia Scarlett,13,11.63,vhs,true
+722,You Are So Beautiful (Je vous trouve très beau),30,,bluray,true
+723,Rampage,23,17.45,vhs,true
+724,Rhinoceros,19,,dvd,true
+725,"Song of Sparrows, The (Avaze gonjeshk-ha)",18,14.95,vhs,false
+726,Species II,13,,vhs,false
+727,"Counterfeit Coin, The (Istoria mias kalpikis liras)",10,,vhs,false
+728,Identity Thief,13,10.26,vhs,true
+729,For Roseanna (Roseanna's Grave),23,,vhs,true
+730,"Report on the Party and the Guests, A (O slavnosti a hostech)",10,8.36,dvd,false
+731,World Traveler,27,21.31,vhs,false
+732,The Seven-Ups,26,,dvd,false
+733,Men Without Women,19,16.00,bluray,false
+734,Clash by Night,11,8.41,vhs,true
+735,Love Ghost (Shibito no koiwazura),23,,vhs,true
+736,"Handful of Dust, A",18,,dvd,false
+737,Happiness,29,23.29,bluray,false
+738,Three Colors: Blue (Trois couleurs: Bleu),14,,dvd,false
+739,Manta - Der Film,22,19.79,vhs,false
+740,Tarzan,23,,vhs,false
+741,3-Iron (Bin-jip),27,21.08,bluray,false
+742,What Will You Do When You Catch Me? (Co mi zrobisz jak mnie zlapiesz?),15,,vhs,false
+743,"Beautiful Mind, A",14,11.73,vhs,false
+744,Matthew's Days,10,,bluray,true
+745,Die Fighting,11,,vhs,true
+746,"George Lopez: It's Not Me, It's You",13,11.05,vhs,true
+747,Ten Violent Women,24,,dvd,true
+748,Jubilee,30,23.60,dvd,false
+749,Mare Nostrum,15,12.33,dvd,false
+750,"Da Vinci Code, The",20,,bluray,false
+751,"Brothers McMullen, The",14,,bluray,false
+752,Beetlejuice,15,12.91,vhs,false
+753,"Wall, The (Die Wand)",17,,bluray,false
+754,"Life of Another, The (La vie d'une autre)",19,15.19,dvd,false
+755,"Very Potter Musical, A",10,8.77,dvd,true
+756,"What's Up, Doc?",13,10.64,bluray,true
+757,Blood Games ,21,,dvd,false
+758,Compulsion,24,,vhs,true
+759,Home Alone 2: Lost in New York,11,9.46,vhs,false
+760,Broadway Bill,16,13.22,dvd,false
+761,Dorian Gray,19,,bluray,false
+762,Random Hearts,16,14.22,bluray,true
+763,Backbeat,23,17.27,bluray,true
+764,Test Pilot,21,16.01,dvd,false
+765,Orca: The Killer Whale,30,,dvd,true
+766,"Mother and the Whore, The (Maman et la putain, La)",17,,bluray,false
+767,Dave Attell: Captain Miserable,10,8.10,dvd,true
+768,"Spider's Stratagem, The (Strategia del ragno)",20,15.11,vhs,true
+769,Zarafa,21,,dvd,true
+770,Streets of Fire,19,14.97,dvd,true
+771,Pitkä kuuma kesä,25,21.73,vhs,false
+772,Fantasma,22,16.63,bluray,false
+773,So Much Water,29,25.48,bluray,false
+774,Lady Jane,14,,bluray,true
+775,Brides of Dracula,27,19.09,bluray,true
+776,"Conspiracy of Torture, The (Beatrice Cenci)",21,,vhs,false
+777,Girlhood,17,14.66,bluray,false
+778,Flirting,15,,vhs,false
+779,To Each His Own,26,,vhs,false
+780,Late Autumn (Akibiyori),10,8.05,vhs,false
+781,Dieta mediterránea,29,,bluray,false
+782,Body Heat,15,11.91,bluray,true
+783,Jab We Met,30,,bluray,true
+784,"Garden of Words, The (Koto no ha no niwa)",29,,bluray,true
+785,Escape Fire: The Fight to Rescue American Healthcare,16,,dvd,false
+786,Saw,24,,vhs,false
+787,Minecraft: The Story of Mojang,25,,vhs,false
+788,Above and Beyond,12,8.68,bluray,true
+789,Kiss Kiss Bang Bang,27,24.01,bluray,true
+790,Beautiful Kate,22,,bluray,false
+791,"Punisher, The",15,12.27,dvd,false
+792,Carmina and Amen (Carmina y amén),28,22.86,dvd,true
+793,9500 Liberty,11,9.42,bluray,false
+794,Gen-Y Cops (Te jing xin ren lei 2) (Gen-X Cops 2: Metal Mayhem) (Metal Mayhem),29,24.87,bluray,false
+795,Fantomas Unleashed,13,11.52,dvd,true
+796,Mishen (Target),20,,dvd,true
+797,"Night Strangler, The",16,,dvd,true
+798,"Shunning, The",14,,bluray,false
+799,Extreme Ops,11,,dvd,true
+800,Dr. Goldfoot and the Girl Bombs (Le spie vengono dal semifreddo),26,,dvd,false
+801,Hope Floats,23,18.49,vhs,true
+802,"Snow on the Pines, The",20,,dvd,false
+803,Bandaged,22,16.20,bluray,false
+804,Daughter from Danang,21,18.82,vhs,true
+805,1984 (Nineteen Eighty-Four),12,,dvd,true
+806,RV,12,,dvd,true
+807,Fantomas Unleashed,18,,vhs,false
+808,"Public Eye, The (Follow Me!)",20,15.48,bluray,false
+809,Klute,17,,bluray,true
+810,"New Kind of Love, A",19,,bluray,true
+811,Reservoir Dogs,18,14.08,bluray,true
+812,Orwell Rolls in His Grave,24,,dvd,true
+813,Cop,25,,dvd,false
+814,Wolves,19,,vhs,true
+815,Soul Surfer,14,10.27,vhs,true
+816,One Way Passage,12,9.22,bluray,true
+817,Cheeky (Trasgredire),23,,vhs,false
+818,Cool Air,26,18.61,dvd,false
+819,Shakes the Clown,25,,vhs,false
+820,Gozu (Gokudô kyôfu dai-gekijô: Gozu),27,21.37,bluray,false
+821,Eva (a.k.a. Eve),20,,bluray,false
+822,Desire: The Vampire,15,12.06,vhs,false
+823,"Oh, Heavenly Dog!",30,,vhs,false
+824,Masters of the Universe,27,,vhs,false
+825,Sinbad (Szindbád),27,,vhs,true
+826,Great!,28,21.41,vhs,true
+827,"Great Rock 'n' Roll Swindle, The",20,16.30,bluray,false
+828,"Love God?, The",20,16.24,bluray,false
+829,Collateral,21,16.71,vhs,false
+830,Eternal Sunshine of the Spotless Mind,28,22.51,vhs,true
+831,Regeneration,27,22.90,vhs,true
+832,Coco Chanel,28,19.84,bluray,false
+833,American Gun,14,,bluray,false
+834,Ann Carver's Profession,23,17.70,vhs,true
+835,Ways to Live Forever,17,,vhs,false
+836,Art & Copy,18,15.17,bluray,true
+837,Code 46,21,15.21,vhs,false
+838,Cinderella,15,10.90,dvd,true
+839,Gates of Heaven,10,7.86,vhs,false
+840,Tower Heist,15,12.33,vhs,false
+841,100 Rifles,11,,vhs,true
+842,"Woman Is a Woman, A (femme est une femme, Une)",19,,dvd,true
+843,"Portrait of a Lady, The",27,,dvd,true
+844,I Saw Mommy Kissing Santa Claus,17,13.61,vhs,false
+845,"Feuer, Eis & Dosenbier",12,9.67,bluray,false
+846,Horrorvision,23,20.68,bluray,true
+847,"Call of Cthulhu, The",23,,dvd,false
+848,Justice League: War,23,,bluray,false
+849,Winnie the Pooh and the Blustery Day,12,9.81,bluray,false
+850,Make It Happen,14,,vhs,true
+851,Quo Vadis,12,8.73,bluray,false
+852,Hanky Panky,23,,dvd,true
+853,Way Out West,18,,vhs,false
+854,Words and Pictures,14,11.05,bluray,true
+855,Viridiana,15,10.55,dvd,true
+856,Nadine,11,9.00,bluray,true
+857,Mobsters,27,19.48,dvd,true
+858,Tsunami: Caught on Camera,29,20.50,bluray,true
+859,Gloriously Wasted,16,,vhs,false
+860,Guest from the Future (Gostya iz buduschego),21,16.85,dvd,false
+861,Friends with Money,22,,vhs,true
+862,May 18 (Hwaryeohan hyuga),18,15.02,dvd,true
+863,I'm All Right Jack,23,19.37,bluray,false
+864,Stoker,12,,bluray,true
+865,"5 Deadly Venoms, The (Wu du) (Five Deadly Venoms)",29,23.56,vhs,false
+866,China Moon,25,,bluray,true
+867,Ghosts... of the Civil Dead,12,,dvd,false
+868,Outland,16,,dvd,false
+869,Don't Move (Non ti muovere),11,,bluray,false
+870,Spies (Spione),11,,vhs,false
+871,How to Make Love to a Woman,13,10.00,bluray,true
+872,"Drum, The (Drums)",25,21.30,bluray,true
+873,Orders to Kill,28,,vhs,true
+874,Man on Wire,21,,dvd,false
+875,"Paimen, piika ja emäntä",24,16.87,dvd,false
+876,Inseparable,28,24.08,vhs,true
+877,"Long Voyage Home, The",27,20.65,vhs,false
+878,Comrades: Almost a Love Story (Tian mi mi),15,,vhs,false
+879,Maiden's Cheek (To xylo vgike apo ton Paradeiso),16,,dvd,true
+880,Maradona by Kusturica,28,,bluray,true
+881,In a Dark Place,16,12.36,vhs,false
+882,Mean Machine,18,,dvd,false
+883,National Lampoon's Lady Killers (National Lampoon's Gold Diggers),19,,dvd,false
+884,Liberty Heights,22,,vhs,false
+885,My Fair Lady,23,19.57,vhs,false
+886,Knights,21,,dvd,true
+887,Intimacy,12,,bluray,true
+888,"Girl with the Dragon Tattoo, The",24,19.60,dvd,false
+889,My New Gun,25,,dvd,true
+890,One Piece Film: Strong World,10,,bluray,true
+891,Lethal Weapon 2,20,,dvd,true
+892,Intohimon vallassa,29,,dvd,true
+893,Three Wishes,24,,vhs,false
+894,Get Thrashed: The Story of Thrash Metal,26,22.89,bluray,false
+895,Tooth Fairy,29,21.26,dvd,false
+896,Main Prem Ki Diwani Hoon,20,,bluray,false
+897,Malcolm X,22,,vhs,false
+898,No Nukes,14,,vhs,false
+899,"Easy Riders, Raging Bulls: How the Sex, Drugs and Rock 'N' Roll Generation Saved Hollywood",17,13.05,vhs,true
+900,"Son's Room, The (Stanza del figlio, La)",27,22.40,vhs,false
+901,Zozo,19,14.14,dvd,false
+902,Stop-Loss,26,,bluray,true
+903,Private Confessions,22,16.51,bluray,false
+904,"Goddess of 1967, The",23,18.23,vhs,false
+905,Half Moon Street,23,18.29,bluray,true
+906,Wimbledon,22,,dvd,true
+907,The Divine Move,24,19.46,bluray,true
+908,One Husband Too Many,20,,dvd,false
+909,Absolute Aggression,19,15.89,dvd,true
+910,"Bridges of Madison County, The",18,13.01,dvd,false
+911,Ivan's Childhood (a.k.a. My Name is Ivan) (Ivanovo detstvo),15,,vhs,false
+912,"Wings of Desire (Himmel über Berlin, Der)",15,12.07,bluray,true
+913,Rage,19,,bluray,true
+914,Angus,29,24.34,bluray,false
+915,"Muppet Christmas Carol, The",10,8.97,vhs,true
+916,Big Miracle,30,,dvd,false
+917,Frances,11,9.10,dvd,false
+918,Shot in the Heart,28,20.24,bluray,false
+919,"Wrecking Crew, The",19,,bluray,true
+920,"20,000 Leagues Under the Sea",28,,vhs,true
+921,Under the Skin,30,,bluray,true
+922,Fate of a Man (Sudba cheloveka),21,,bluray,true
+923,"Escape Artist, The",29,,dvd,false
+924,Hamlet,16,,vhs,false
+925,Vollidiot,18,,bluray,true
+926,Leviathan,15,,bluray,false
+927,"Ref, The",13,9.36,vhs,true
+928,If God Is Willing and da Creek Don't Rise,13,,bluray,false
+929,Medicine Man,22,,vhs,false
+930,"World according to Ion B., The (Lumea vazuta de Ion B)",11,9.22,bluray,true
+931,Lifted,24,,dvd,true
+932,Year of the Carnivore,17,,bluray,true
+933,Snow Dogs,17,,dvd,true
+934,Woman Thou Art Loosed,28,,dvd,false
+935,Deliver Us from Evil,29,,bluray,true
+936,Unrest,17,13.35,dvd,false
+937,Spring Breakdown,16,13.47,bluray,false
+938,"Little Trip to Heaven, A",18,13.68,dvd,true
+939,"Sword and the Sorcerer, The",29,20.48,bluray,true
+940,Private,16,14.09,dvd,true
+941,Think Like a Man Too,28,20.41,dvd,false
+942,Lewis Black: Stark Raving Black,14,,dvd,true
+943,I Am Dina,12,8.93,vhs,true
+944,Days of Heaven,17,15.21,dvd,true
+945,Atlas Shrugged: Who Is John Galt? (Atlas Shrugged: Part III),10,,vhs,true
+946,Flashback,13,,vhs,false
+947,"Amateurs, The (Moguls, The)",20,,bluray,false
+948,Aqua Teen Hunger Force Colon Movie Film for Theaters,26,,dvd,false
+949,Castle of Purity (El castillo de la pureza),25,18.96,bluray,false
+950,Not Suitable for Children,26,20.43,bluray,true
+951,Two Arabian Knights,15,10.80,vhs,true
+952,"Haunted House, A",13,10.42,vhs,false
+953,Still Life (Sanxia haoren),18,13.23,dvd,true
+954,"Moon Is Blue, The",12,9.17,dvd,true
+955,Inside Deep Throat,23,18.94,bluray,false
+956,Baby Take a Bow,20,,bluray,true
+957,Master of the Flying Guillotine (Du bi quan wang da po xue di zi),21,16.53,vhs,true
+958,"Same Love, Same Rain (El mismo amor, la misma lluvia)",21,16.27,dvd,true
+959,Adult Camp,28,24.09,bluray,false
+960,Pirates of the Caribbean: At World's End,15,11.24,dvd,true
+961,Adulthood,26,20.18,vhs,true
+962,Kissed by Winter (Vinterkyss),16,,bluray,true
+963,1939: Hollywood's Greatest Year,25,,bluray,false
+964,"Three Lives of Thomasina, The",28,21.50,bluray,false
+965,How to Be a Man,14,,bluray,true
+966,Madonna's Pig,19,,vhs,false
+967,Dangerous Ground,30,21.79,dvd,false
+968,Ernest & Célestine (Ernest et Célestine),11,,bluray,true
+969,Babe,13,10.51,dvd,true
+970,Gaby: A True Story,10,,bluray,false
+971,"They Shoot Horses, Don't They?",10,,vhs,false
+972,The Little Rascals Save the Day,15,10.56,vhs,false
+973,All the Young Men,27,,vhs,false
+974,Shottas,24,,bluray,false
+975,Body Fat Index of Love,22,16.47,vhs,true
+976,Houdini,17,14.80,bluray,false
+977,War Photographer,29,,vhs,false
+978,"Red Baron, The (Der rote Baron)",14,,bluray,true
+979,Adventures of Zatoichi (Zatôichi sekisho yaburi) (Zatôichi 9),27,,bluray,true
+980,Finding Joy,12,9.01,dvd,true
+981,Fast Lane,30,,bluray,false
+982,"Hunchback, The",21,16.14,dvd,true
+983,Rush Hour 3,13,10.09,dvd,true
+984,"Amazing Spider-Man, The",22,,vhs,false
+985,Tom Sawyer,27,,dvd,false
+986,Plastic,11,,vhs,false
+987,"Negotiator, The",19,,dvd,false
+988,I Married a Witch,19,16.01,bluray,false
+989,Good Burger,22,,vhs,true
+990,Good Boy!,24,19.96,bluray,false
+991,"Gore Gore Girls, The",26,22.94,dvd,false
+992,Gandhi,25,,dvd,false
+993,Mighty Aphrodite,11,8.57,vhs,true
+994,"Mickey, Donald, Goofy: The Three Musketeers",22,,vhs,false
+995,The Gilded Cage,14,10.62,dvd,true
+996,Cabeza de Vaca,27,,bluray,false
+997,Giants and Toys (Kyojin to gangu),13,,vhs,false
+998,"Strange Case of Angelica, The (O Estranho Caso de Angélica)",14,,vhs,true
+999,Brothers in Trouble,10,,vhs,true
+1000,Go Get Some Rosemary (Daddy Longlegs),19,,dvd,false
