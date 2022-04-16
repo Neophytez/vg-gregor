@@ -26,8 +26,8 @@
         <div class="col-6 mb-3">
             <label>Stock</label>
             <select class="form-select" v-model="product.stock">
-                <option value="1">In stock</option>
-                <option value="0">Out of stock</option>
+                <option :value="true">In stock</option>
+                <option :value="false">Out of stock</option>
             </select>
         </div>
         <div class="col-6 mb-3">
