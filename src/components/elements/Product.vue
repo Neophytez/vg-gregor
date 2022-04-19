@@ -7,7 +7,7 @@
             <span :class="{'strike-price': product.sale_price}">{{ product.price }} €</span>
             <span v-if="product.sale_price" class="ms-3 text-danger">{{ product.sale_price }} €</span>
         </div>
-        <button class="btn btn-dark">Add to cart</button>
+        <button class="btn btn-dark" @click="$emit('addToCart', product)">Add to cart</button>
     </div>
 </template>
 
@@ -22,7 +22,8 @@ export default {
             required: true
         }
     },
-    setup(props) {
+    emits: ['addToCart'],
+    setup(props, context) {
         const sale_proc = computed(() => {
             if(!props.product.sale_price || !props.product.price) return null;
 
@@ -41,7 +42,7 @@ export default {
         return {
             productImage,
             productTitle,
-            sale_proc
+            sale_proc,
         }
     }
 }

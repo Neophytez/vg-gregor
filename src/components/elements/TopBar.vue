@@ -14,7 +14,8 @@
                     </li>
                 </ul>
                 <div class="d-flex">
-                    <button class="btn btn-outline-light"><i class="bi bi-cart-fill"></i> {{number_of_items}}</button>
+                    <button class="btn btn-outline-light me-3">Login</button>
+                    <button class="btn btn-outline-light"><i class="bi bi-cart-fill"></i> {{cart.length}}</button>
                 </div>
             </div>
         </div>
@@ -26,8 +27,13 @@ import {ref} from "vue";
 
 export default {
     name: "TopBar",
+    props: {
+        cart: {
+            type: Array,
+            required: true
+        }
+    },
     setup() {
-        const number_of_items = ref(0);
         const navbar_items = ref([
             {
                 text: "VHS",
@@ -43,7 +49,6 @@ export default {
         ]);
 
         return {
-            number_of_items,
             navbar_items
         }
     }

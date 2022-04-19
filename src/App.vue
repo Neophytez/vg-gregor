@@ -1,6 +1,6 @@
 <template>
-    <TopBar></TopBar>
-    <ProductCatalog :products="products_sorted"></ProductCatalog>
+    <TopBar :cart="cart"></TopBar>
+    <ProductCatalog :products="products_sorted" @add-to-cart="addToCard($event)"></ProductCatalog>
     <div class="my-5"> </div>
     <Footer></Footer>
 </template>
@@ -31,10 +31,16 @@ export default {
             imdb_link: null
         });
 
+        const cart = ref([]);
+
         const products = ref([]);
         const products_sorted = computed(() => {
             return products.value.sort((a, b) => (a.title > b.title) ? 1 : -1);
         });
+
+        function addToCard(product) {
+            cart.value.push(product)
+        }
 
         const xhr = new XMLHttpRequest();
         xhr.open('GET', './products.csv');
@@ -74,7 +80,9 @@ export default {
         return {
             active_component,
             products,
-            products_sorted
+            products_sorted,
+            addToCard,
+            cart
         }
     }
 }

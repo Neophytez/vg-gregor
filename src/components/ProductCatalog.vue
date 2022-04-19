@@ -8,7 +8,7 @@
     <div class="d-flex container align-items-center">
         <div class="row w-100">
             <div v-for="product in filtered_products" class="col-3">
-                <Product :product="product"></Product>
+                <Product :product="product" @add-to-cart="$emit('addToCart', $event)"></Product>
             </div>
         </div>
     </div>
@@ -27,6 +27,7 @@ export default {
             required: true
         }
     },
+    emits: ['addToCart'],
     setup(props) {
         const filter = ref("");
 
@@ -38,7 +39,7 @@ export default {
 
         return {
             filtered_products,
-            filter
+            filter,
         }
     }
 }
