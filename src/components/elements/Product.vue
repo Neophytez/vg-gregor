@@ -2,12 +2,13 @@
     <div class="d-flex flex-column card align-items-center my-3 p-3">
         <img :src="productImage(product.image)" alt="Product image" class="product-image"/>
         <div v-if="sale_proc" class="sale-tag">{{sale_proc}} %</div>
-        <div class="d-flex align-items-center title">{{ productTitle(product.title) }}</div>
+        <div class="d-flex align-items-center title">{{ product.title }}</div>
         <div class="d-flex justify-content-around price">
             <span :class="{'strike-price': product.sale_price}">{{ product.price }} €</span>
             <span v-if="product.sale_price" class="ms-3 text-danger">{{ product.sale_price }} €</span>
         </div>
         <button class="btn btn-dark" @click="$emit('addToCart', product)">Add to cart</button>
+        <button v-if="authenticated" class="btn btn-outline-dark mt-3" @click="$emit('editProduct', product)">Edit</button>
     </div>
 </template>
 
@@ -20,9 +21,13 @@ export default {
         product: {
             type: Object,
             required: true
+        },
+        authenticated: {
+            type: Boolean,
+            required: true
         }
     },
-    emits: ['addToCart'],
+    emits: ['addToCart', 'editProduct'],
     setup(props, context) {
         const sale_proc = computed(() => {
             if(!props.product.sale_price || !props.product.price) return null;

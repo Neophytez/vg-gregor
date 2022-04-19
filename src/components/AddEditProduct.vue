@@ -5,7 +5,7 @@
         </div>
         <div class="col-6 mb-3">
             <label>Product name</label>
-            <input type="text" class="form-control" v-model="product.name">
+            <input type="text" class="form-control" v-model="product.title">
         </div>
         <div v-if="photo_url" class="d-flex col-6 justify-content-center">
             <img class="p-3 w-50" :src="photo_url" alt="Product photo"/>
@@ -33,9 +33,9 @@
         <div class="col-6 mb-3">
             <label>Media type</label>
             <select class="form-select" v-model="product.media_type">
-                <option value="DVD">DVD</option>
-                <option value="Bluray">Bluray</option>
-                <option value="VHS">VHS</option>
+                <option value="dvd">DVD</option>
+                <option value="bluray">Bluray</option>
+                <option value="vhs">VHS</option>
             </select>
         </div>
         <div class="col-6 mb-3">
@@ -58,7 +58,7 @@ export default {
         product: {
             type: Object,
             default: null
-        },
+        }
     },
     setup(props) {
         const product = ref({
@@ -70,6 +70,10 @@ export default {
             media_type: null,
             imdb_link: null
         });
+
+        if(props.product) {
+            product.value = {...props.product}
+        }
 
         const action = computed(() => {
             return props.product === null ? "add" : "edit";
