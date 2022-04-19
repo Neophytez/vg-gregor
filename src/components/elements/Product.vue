@@ -1,6 +1,7 @@
 <template>
     <div class="d-flex flex-column card align-items-center my-3 p-3">
         <img :src="productImage(product.image)" alt="Product image" class="product-image"/>
+        <div v-if="sale_proc" class="sale-tag">{{sale_proc}} %</div>
         <div class="d-flex align-items-center title">{{ productTitle(product.title) }}</div>
         <div class="d-flex justify-content-around price">
             <span :class="{'strike-price': product.sale_price}">{{ product.price }} €</span>
@@ -11,6 +12,8 @@
 </template>
 
 <script>
+import {computed} from "vue";
+
 export default {
     name: "Product",
     props: {
@@ -20,6 +23,12 @@ export default {
         }
     },
     setup(props) {
+        const sale_proc = computed(() => {
+            if(!props.product.sale_price || !props.product.price) return null;
+
+            return Math.round(props.product.sale_price / props.product.price * 100 - 100);
+        });
+
         function productImage(src) {
             if(src === null) return "images/no_photo_avail.png";
             return src;
@@ -31,7 +40,8 @@ export default {
 
         return {
             productImage,
-            productTitle
+            productTitle,
+            sale_proc
         }
     }
 }
@@ -58,5 +68,22 @@ export default {
     text-align: center;
     font-weight: 600;
     margin-bottom: 1rem;
+}
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.sale-tag {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    border-radius: 2px;
+    background-color: #dc3545;
+    color: white;
+    font-weight: 600;
 }
 </style>
