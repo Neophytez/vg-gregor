@@ -55,6 +55,8 @@ export default {
 .product-image {
     max-height: 200px;
     max-width: 200px;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
 }
 
 .card .title {
@@ -70,16 +72,10 @@ export default {
     margin-bottom: 1rem;
 }
 
-.top-left {
-    position: absolute;
-    top: 8px;
-    left: 16px;
-}
-
 .sale-tag {
     position: absolute;
-    top: 8px;
-    right: 8px;
+    top: 0.5rem;
+    right: 0.5rem;
     padding: 0.2rem 0.5rem 0.2rem 0.5rem;
     border-radius: 2px;
     background-color: #dc3545;
