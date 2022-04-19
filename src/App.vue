@@ -1,7 +1,7 @@
 <template>
     <TopBar :cart="cart" @change-active-component="active_component = $event" :authenticated="authenticated" @logout="authenticated = false"></TopBar>
     <ProductCatalog v-if="isActiveComponent('ProductCatalog')" :products="products_sorted" @add-to-cart="addToCard($event)" @edit-product="editProduct($event)" :authenticated="authenticated"></ProductCatalog>
-    <AddEditProduct v-else-if="isActiveComponent('AddEditProduct')" :product="edit_product"></AddEditProduct>
+    <AddEditProduct v-else-if="isActiveComponent('AddEditProduct')" :product="edit_product" @delete-product="deleteProduct($event)"></AddEditProduct>
     <Login v-else-if="isActiveComponent('Login')" @authenticate="authenticate($event)"></Login>
     <div class="my-5"> </div>
     <Footer></Footer>
@@ -61,6 +61,14 @@ export default {
             active_component.value = "AddEditProduct";
         }
 
+        function deleteProduct(id) {
+            let index = products.value.map(product => {
+                return product.id;
+            }).indexOf(id);
+            products.value.splice(index, 1);
+            active_component.value = "ProductCatalog";
+        }
+
         const xhr = new XMLHttpRequest();
         xhr.open('GET', './products.csv');
         xhr.onload = function () {
@@ -90,7 +98,6 @@ export default {
                         product[header[i]] = item[i] === "true";
                     }
                     else if(header[i] === "title") {
-                        console.log(item[i].replace(/["]+/g, ''));
                         product[header[i]] = item[i].replace(/["]+/g, '');
                     } else {
                         product[header[i]] = item[i];
@@ -117,7 +124,8 @@ export default {
             authenticate,
             authenticated,
             editProduct,
-            edit_product
+            edit_product,
+            deleteProduct
         }
     }
 }

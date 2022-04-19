@@ -44,7 +44,7 @@
         </div>
         <div class="d-flex col-6 justify-content-between">
             <button :disabled="disabled_save" class="btn btn-success"><i class="bi bi-check"></i> Save</button>
-            <button v-if="action === 'edit'" class="btn btn-danger"><i class="bi bi-trash3"></i> Delete</button>
+            <button v-if="action === 'edit'" class="btn btn-danger" @click="$emit('deleteProduct', product.id)"><i class="bi bi-trash3"></i> Delete</button>
         </div>
     </div>
 </template>
@@ -60,6 +60,7 @@ export default {
             default: null
         }
     },
+    emits: ['deleteProduct'],
     setup(props) {
         const product = ref({
             name: null,
