@@ -62,10 +62,12 @@ export default {
         }
 
         function deleteProduct(id) {
-            let index = products.value.map(product => {
-                return product.id;
-            }).indexOf(id);
-            products.value.splice(index, 1);
+            if (id !== null && id !== undefined) {
+                let index = products.value.map(product => {
+                    return product.id;
+                }).indexOf(id);
+                products.value.splice(index, 1);
+            }
             active_component.value = "ProductCatalog";
         }
 
