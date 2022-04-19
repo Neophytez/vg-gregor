@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
         <div class="container-fluid">
             <a href="#">
-                <img src="/images/logo.jpg" alt="VG.Gregor">
+                <img src="@/assets/logo.jpg" alt="VG.Gregor">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNavbar" aria-controls="topNavbar" aria-expanded="false" aria-label="Toggle menu">
                 <span class="navbar-toggler-icon"></span>

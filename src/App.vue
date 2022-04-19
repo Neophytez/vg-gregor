@@ -37,7 +37,7 @@ export default {
         });
 
         const xhr = new XMLHttpRequest();
-        xhr.open('GET', 'http://localhost:3000/products.csv');
+        xhr.open('GET', './products.csv');
         xhr.onload = function () {
             if (xhr.status !== 200) return;
             let lines = xhr.responseText.split("\n")
