@@ -1,17 +1,24 @@
 <template>
     <TopBar></TopBar>
-    <component :is="active_component"></component>
+    <ProductCatalog :products="products_sorted"></ProductCatalog>
+    <div class="my-5"> </div>
     <Footer></Footer>
 </template>
 
 <script>
-import Product from "./components/Product.vue";
-import {ref, shallowRef} from "vue";
+import ProductCatalog from "./components/ProductCatalog.vue";
+import {ref, computed, shallowRef} from "vue";
+import AddEditProduct from "./components/AddEditProduct.vue";
+
 
 export default {
     name: "App",
+    components: {
+        AddEditProduct,
+        ProductCatalog
+    },
     setup() {
-        const active_component = shallowRef(Product);
+        const active_component = ref("ProductCatalog");
 
         const product = ref({
             id: null,
@@ -25,6 +32,9 @@ export default {
         });
 
         const products = ref([]);
+        const products_sorted = computed(() => {
+            return products.value.sort((a, b) => (a.title > b.title) ? 1 : -1);
+        });
 
         const xhr = new XMLHttpRequest();
         xhr.open('GET', 'http://localhost:3000/products.csv');
@@ -37,13 +47,15 @@ export default {
 
             // iterate lines
             lines.forEach(line => {
-                // split line by comma to get item
-                let item = line.split(",")
+                // skip empty lines
+                if(!line) return;
 
-                // init empty product
+                // split line by comma to get item, ignore commas inside quotes
+                // https://stackoverflow.com/questions/11456850/split-a-string-by-commas-but-ignore-commas-within-double-quotes-using-javascript/53774647#53774647
+                let item = line.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/);
+
+                // init empty product and iterate header length
                 let product = {};
-
-                // iterate header length
                 for (let i = 0; i < header.length; i++) {
                     // parse id, price, sale_price as number, stock as boolean, everything else as string
                     product[header[i]] = ['id', 'price', 'sale_price'].includes(header[i]) ? Number(item[i]) : (['stock'].includes(header[i]) ? (item[i] === "true") : item[i]);
@@ -51,8 +63,9 @@ export default {
 
                 // add imdb_link prop
                 product['imdb_link'] = null;
+                product['image'] = null;
 
-                // add product to products
+                // push product to products
                 products.value.push(product)
             });
         };
@@ -60,7 +73,8 @@ export default {
 
         return {
             active_component,
-            products
+            products,
+            products_sorted
         }
     }
 }
