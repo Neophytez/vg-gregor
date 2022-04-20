@@ -37,7 +37,13 @@ export default {
 
         const cart = ref([]);
         function AddToCart(product) {
-            cart.value.push({...product})
+            let index = cart.value.findIndex(el => el.id === product.id);
+            if(index < 0) {
+                product.quantity = 1;
+                cart.value.push(product)
+            } else {
+                product.quantity++;
+            }
         }
 
         const authenticated = ref(false);
@@ -67,7 +73,6 @@ export default {
 
         function CreateProduct(product) {
             product.id = GetAvailableId();
-            console.log(product)
             products.value.push(product.value);
             ChangeActiveComponent('ProductCatalog');
         }

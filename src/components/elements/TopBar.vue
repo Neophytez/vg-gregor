@@ -15,7 +15,7 @@
                     <button v-if="!authenticated" class="btn btn-outline-light me-3" @click="ChangeActiveComponent('Login')">Login</button>
                     <button v-if="authenticated" class="btn btn-outline-light me-3" @click="ChangeActiveComponent('AddEditProduct', true)">Add product</button>
                     <button v-if="authenticated"  class="btn btn-outline-light me-3" @click="Logout()">Logout</button>
-                    <button class="btn btn-outline-light"><i class="bi bi-cart-fill"></i> {{cart.length}}</button>
+                    <button class="btn btn-outline-light" @click="ChangeActiveComponent('Cart')"><i class="bi bi-cart-fill"></i> {{cart_quantity}}</button>
                 </div>
             </div>
         </div>
@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import {inject, ref} from "vue";
+import {inject, ref, computed} from "vue";
 
 export default {
     name: "TopBar",
@@ -33,7 +33,7 @@ export default {
             required: true
         }
     },
-    setup() {
+    setup(props) {
         const navbar_items = ref([
             {
                 text: "VHS",
@@ -48,6 +48,12 @@ export default {
             },
         ]);
 
+        const cart_quantity = computed(() => {
+            return props.cart.reduce((prev, cur) => {
+                return prev + cur.quantity;
+            }, 0);
+        });
+
         const authenticated = inject('authenticated');
         const ChangeActiveComponent = inject('ChangeActiveComponent');
         const Logout = inject('Logout');
@@ -56,7 +62,8 @@ export default {
             navbar_items,
             authenticated,
             ChangeActiveComponent,
-            Logout
+            Logout,
+            cart_quantity
         }
     }
 }
