@@ -63,7 +63,7 @@ export default {
     setup(props) {
         const product = ref(props.product ? {...props.product} : {
             id: null,
-            name: null,
+            title: null,
             photo: null,
             price: null,
             sale_price: null,
@@ -79,7 +79,7 @@ export default {
         const photo_url = ref(null);
 
         const disabled_save = computed(() => {
-            return Object.values(product.value).find(value => value === null) !== undefined;
+            return !product.value.title || !product.value.price || !product.value.price;
         })
 
         function PreviewPhoto(event) {
@@ -90,7 +90,7 @@ export default {
 
         function SaveProduct() {
             if(product.value.id) {
-                //UpdateProduct();
+                UpdateProduct(product.value);
             } else {
                 CreateProduct(product.value);
             }
@@ -98,6 +98,7 @@ export default {
 
         const DeleteProduct = inject('DeleteProduct');
         const CreateProduct = inject('CreateProduct');
+        const UpdateProduct = inject('UpdateProduct');
 
         return {
             product,

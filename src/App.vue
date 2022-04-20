@@ -73,6 +73,12 @@ export default {
             return Math.max.apply(Math, products.value.map(el => el.id)) + 1;
         }
 
+        function UpdateProduct(product) {
+            const index = products.value.findIndex(el => el.id === product.id);
+            products.value[index] = product;
+            ChangeActiveComponent("ProductCatalog");
+        }
+
         provide('ChangeActiveComponent', ChangeActiveComponent);
         provide('AddToCart', AddToCart);
         provide('Authenticate', Authenticate);
@@ -80,6 +86,7 @@ export default {
         provide('EditProduct', EditProduct);
         provide('DeleteProduct', DeleteProduct);
         provide('CreateProduct', CreateProduct);
+        provide('UpdateProduct', UpdateProduct);
         provide('authenticated', authenticated);
 
         const xhr = new XMLHttpRequest();
