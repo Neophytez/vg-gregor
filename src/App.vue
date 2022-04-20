@@ -64,12 +64,22 @@ export default {
             ChangeActiveComponent('ProductCatalog');
         }
 
+        function CreateProduct(product) {
+            product.value.id = GetAvailableId();
+            products.value.push(product.value);
+        }
+
+        function GetAvailableId() {
+            return Math.max.apply(Math, products.value.map(el => el.id)) + 1;
+        }
+
         provide('ChangeActiveComponent', ChangeActiveComponent);
         provide('AddToCart', AddToCart);
         provide('Authenticate', Authenticate);
         provide('Logout', Logout);
         provide('EditProduct', EditProduct);
         provide('DeleteProduct', DeleteProduct);
+        provide('CreateProduct', CreateProduct);
         provide('authenticated', authenticated);
 
         const xhr = new XMLHttpRequest();

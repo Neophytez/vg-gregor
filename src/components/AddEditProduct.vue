@@ -43,7 +43,7 @@
             <input type="text" class="form-control" v-model="product.imdb_link">
         </div>
         <div class="d-flex col-6 justify-content-between">
-            <button :disabled="disabled_save" class="btn btn-success"><i class="bi bi-check"></i> Save</button>
+            <button :disabled="disabled_save" class="btn btn-success" @click="SaveProduct"><i class="bi bi-check"></i> Save</button>
             <button v-if="action === 'edit'" class="btn btn-danger" @click="DeleteProduct(product.id)"><i class="bi bi-trash3"></i> Delete</button>
         </div>
     </div>
@@ -88,7 +88,16 @@ export default {
             photo_url.value = URL.createObjectURL(file);
         }
 
+        function SaveProduct() {
+            if(product.value.id) {
+                //UpdateProduct();
+            } else {
+                CreateProduct(product.value);
+            }
+        }
+
         const DeleteProduct = inject('DeleteProduct');
+        const CreateProduct = inject('CreateProduct');
 
         return {
             product,
@@ -97,6 +106,7 @@ export default {
             DeleteProduct,
             disabled_save,
             action,
+            SaveProduct
         }
     }
 }
