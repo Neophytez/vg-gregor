@@ -36,7 +36,7 @@ export default {
 
         const cart = ref([]);
         function AddToCart(product) {
-            cart.value.push(product)
+            cart.value.push({...product})
         }
 
         const authenticated = ref(false);
@@ -70,12 +70,15 @@ export default {
         }
 
         function GetAvailableId() {
+            if(!products.value.length) return 1;
             return Math.max.apply(Math, products.value.map(el => el.id)) + 1;
         }
 
         function UpdateProduct(product) {
             const index = products.value.findIndex(el => el.id === product.id);
-            products.value[index] = product;
+            if(index >= 0) {
+                products.value[index] = product;
+            }
             ChangeActiveComponent("ProductCatalog");
         }
 
