@@ -50,10 +50,10 @@
 </template>
 
 <script>
-import {ref, computed, inject} from "vue";
+import {ref, computed, inject, watch} from "vue";
 
 export default {
-    name: "Product",
+    name: "AddEditProduct",
     props: {
         product: {
             type: Object,
@@ -79,8 +79,21 @@ export default {
         const photo_url = ref(null);
 
         const disabled_save = computed(() => {
-            return !product.value.title || !product.value.price || !product.value.price;
+            return !product.value.title || !product.value.price || !product.value.price || !product.value.stock || !product.value.media_type;
         })
+
+        watch(() => props.product, (newVal) => {
+            if(!newVal) product.value = {
+                id: null,
+                title: null,
+                photo: null,
+                price: null,
+                sale_price: null,
+                stock: null,
+                media_type: null,
+                imdb_link: null
+            };
+        });
 
         function PreviewPhoto(event) {
             const file = event.target.files[0];

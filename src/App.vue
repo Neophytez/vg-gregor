@@ -25,7 +25,8 @@ export default {
         function IsActiveComponent(name) {
             return name === active_component.value;
         }
-        function ChangeActiveComponent(component) {
+        function ChangeActiveComponent(component, clear = false) {
+            if(clear) edit_product.value = null;
             active_component.value = component;
         }
 
@@ -65,8 +66,10 @@ export default {
         }
 
         function CreateProduct(product) {
-            product.value.id = GetAvailableId();
+            product.id = GetAvailableId();
+            console.log(product)
             products.value.push(product.value);
+            ChangeActiveComponent('ProductCatalog');
         }
 
         function GetAvailableId() {

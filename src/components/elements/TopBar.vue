@@ -13,7 +13,8 @@
                 </ul>
                 <div class="d-flex">
                     <button v-if="!authenticated" class="btn btn-outline-light me-3" @click="ChangeActiveComponent('Login')">Login</button>
-                    <button v-else class="btn btn-outline-light me-3" @click="Logout()">Logout</button>
+                    <button v-if="authenticated" class="btn btn-outline-light me-3" @click="ChangeActiveComponent('AddEditProduct', true)">Add product</button>
+                    <button v-if="authenticated"  class="btn btn-outline-light me-3" @click="Logout()">Logout</button>
                     <button class="btn btn-outline-light"><i class="bi bi-cart-fill"></i> {{cart.length}}</button>
                 </div>
             </div>
