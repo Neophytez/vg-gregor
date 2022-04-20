@@ -8,7 +8,7 @@
     <div class="d-flex container align-items-center">
         <div class="row w-100">
             <div v-for="product in filtered_products" class="col-3">
-                <Product :product="product" @add-to-cart="$emit('addToCart', $event)" :authenticated="authenticated" @edit-product="$emit('editProduct', $event)"></Product>
+                <Product :product="product"></Product>
             </div>
         </div>
     </div>
@@ -25,15 +25,10 @@ export default {
         products: {
             type: Array,
             required: true
-        },
-        authenticated: {
-            type: Boolean,
-            required: true
         }
     },
-    emits: ['addToCart', 'editProduct'],
     setup(props) {
-        const filter = ref("");
+        const filter = ref('');
 
         const filtered_products = computed(() => {
             return props.products.filter(el => {

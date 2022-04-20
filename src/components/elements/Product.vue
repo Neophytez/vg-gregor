@@ -1,19 +1,19 @@
 <template>
     <div class="d-flex flex-column card align-items-center my-3 p-3">
-        <img :src="productImage(product.image)" alt="Product image" class="product-image"/>
+        <img :src="ProductImage(product.image)" alt="Product image" class="product-image"/>
         <div v-if="sale_proc" class="sale-tag">{{sale_proc}} %</div>
         <div class="d-flex align-items-center title">{{ product.title }}</div>
         <div class="d-flex justify-content-around price">
             <span :class="{'strike-price': product.sale_price}">{{ product.price }} €</span>
             <span v-if="product.sale_price" class="ms-3 text-danger">{{ product.sale_price }} €</span>
         </div>
-        <button class="btn btn-dark" @click="$emit('addToCart', product)">Add to cart</button>
-        <button v-if="authenticated" class="btn btn-outline-dark mt-3" @click="$emit('editProduct', product)">Edit</button>
+        <button class="btn btn-dark" @click="AddToCart(product)">Add to cart</button>
+        <button v-if="authenticated" class="btn btn-outline-dark mt-3" @click="EditProduct(product)">Edit</button>
     </div>
 </template>
 
 <script>
-import {computed} from "vue";
+import {computed, inject} from "vue";
 
 export default {
     name: "Product",
@@ -21,33 +21,29 @@ export default {
         product: {
             type: Object,
             required: true
-        },
-        authenticated: {
-            type: Boolean,
-            required: true
         }
     },
-    emits: ['addToCart', 'editProduct'],
-    setup(props, context) {
+    setup(props) {
         const sale_proc = computed(() => {
             if(!props.product.sale_price || !props.product.price) return null;
-
             return Math.round(props.product.sale_price / props.product.price * 100 - 100);
         });
 
-        function productImage(src) {
+        function ProductImage(src) {
             if(src === null) return "images/no_photo_avail.png";
             return src;
         }
 
-        function productTitle(title) {
-            return title.replace(/['"]+/g, '');
-        }
+        const AddToCart = inject('AddToCart');
+        const EditProduct = inject('EditProduct');
+        const authenticated = inject('authenticated');
 
         return {
-            productImage,
-            productTitle,
+            ProductImage,
             sale_proc,
+            AddToCart,
+            EditProduct,
+            authenticated
         }
     }
 }

@@ -13,20 +13,21 @@
 </template>
 
 <script>
-import {ref} from "vue";
+import {inject, ref} from "vue";
 
 export default {
     name: "Login",
-    emits: ['authenticate'],
-    setup(_, context) {
+    setup() {
         const credentials = ref({
             username: null,
             password: null
         });
 
+        const Authenticate = inject('Authenticate');
+
         function login() {
             if(!credentials.value.username || !credentials.value.password) return;
-            context.emit('authenticate', credentials)
+            Authenticate(credentials)
         }
 
         return {

@@ -12,7 +12,7 @@
         </div>
         <div class="d-flex col-6 justify-content-center">
             <label class="btn btn-outline-dark">
-                <i class="bi bi-image"></i> Add product photo<input type="file" style="display: none;" name="image" accept="image/png, image/jpeg" @change="previewPhoto">
+                <i class="bi bi-image"></i> Add product photo<input type="file" style="display: none;" name="image" accept="image/png, image/jpeg" @change="PreviewPhoto">
             </label>
         </div>
         <div class="col-6 mb-3">
@@ -44,13 +44,13 @@
         </div>
         <div class="d-flex col-6 justify-content-between">
             <button :disabled="disabled_save" class="btn btn-success"><i class="bi bi-check"></i> Save</button>
-            <button v-if="action === 'edit'" class="btn btn-danger" @click="$emit('deleteProduct', product.id)"><i class="bi bi-trash3"></i> Delete</button>
+            <button v-if="action === 'edit'" class="btn btn-danger" @click="DeleteProduct(product.id)"><i class="bi bi-trash3"></i> Delete</button>
         </div>
     </div>
 </template>
 
 <script>
-import {ref, computed} from "vue";
+import {ref, computed, inject} from "vue";
 
 export default {
     name: "Product",
@@ -60,9 +60,9 @@ export default {
             default: null
         }
     },
-    emits: ['deleteProduct'],
     setup(props) {
-        const product = ref({
+        const product = ref(props.product ? {...props.product} : {
+            id: null,
             name: null,
             photo: null,
             price: null,
@@ -71,10 +71,6 @@ export default {
             media_type: null,
             imdb_link: null
         });
-
-        if(props.product) {
-            product.value = {...props.product}
-        }
 
         const action = computed(() => {
             return props.product === null ? "add" : "edit";
@@ -86,18 +82,21 @@ export default {
             return Object.values(product.value).find(value => value === null) !== undefined;
         })
 
-        function previewPhoto(event) {
+        function PreviewPhoto(event) {
             const file = event.target.files[0];
             product.value.photo = file;
             photo_url.value = URL.createObjectURL(file);
         }
 
+        const DeleteProduct = inject('DeleteProduct');
+
         return {
             product,
             photo_url,
-            previewPhoto,
+            PreviewPhoto,
+            DeleteProduct,
             disabled_save,
-            action
+            action,
         }
     }
 }

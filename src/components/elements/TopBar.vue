@@ -1,7 +1,7 @@
 <template>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
         <div class="container-fluid">
-            <img src="@/assets/logo.jpg" alt="VG.Gregor" @click="$emit('changeActiveComponent', 'ProductCatalog')">
+            <img src="@/assets/logo.jpg" alt="VG.Gregor" @click="ChangeActiveComponent('ProductCatalog')">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNavbar" aria-controls="topNavbar" aria-expanded="false" aria-label="Toggle menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -12,8 +12,8 @@
                     </li>
                 </ul>
                 <div class="d-flex">
-                    <button v-if="!authenticated" class="btn btn-outline-light me-3" @click="$emit('changeActiveComponent', 'Login')">Login</button>
-                    <button v-else class="btn btn-outline-light me-3" @click="$emit('logout')">Logout</button>
+                    <button v-if="!authenticated" class="btn btn-outline-light me-3" @click="ChangeActiveComponent('Login')">Login</button>
+                    <button v-else class="btn btn-outline-light me-3" @click="Logout()">Logout</button>
                     <button class="btn btn-outline-light"><i class="bi bi-cart-fill"></i> {{cart.length}}</button>
                 </div>
             </div>
@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import {ref} from "vue";
+import {inject, ref} from "vue";
 
 export default {
     name: "TopBar",
@@ -30,13 +30,8 @@ export default {
         cart: {
             type: Array,
             required: true
-        },
-        authenticated: {
-            type: Boolean,
-            default: false
         }
     },
-    emits: ['changeActiveComponent', 'logout'],
     setup() {
         const navbar_items = ref([
             {
@@ -52,8 +47,15 @@ export default {
             },
         ]);
 
+        const authenticated = inject('authenticated');
+        const ChangeActiveComponent = inject('ChangeActiveComponent');
+        const Logout = inject('Logout');
+
         return {
-            navbar_items
+            navbar_items,
+            authenticated,
+            ChangeActiveComponent,
+            Logout
         }
     }
 }

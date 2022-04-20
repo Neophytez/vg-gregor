@@ -1,14 +1,14 @@
 <template>
-    <TopBar :cart="cart" @change-active-component="active_component = $event" :authenticated="authenticated" @logout="authenticated = false"></TopBar>
-    <ProductCatalog v-if="isActiveComponent('ProductCatalog')" :products="products_sorted" @add-to-cart="addToCard($event)" @edit-product="editProduct($event)" :authenticated="authenticated"></ProductCatalog>
-    <AddEditProduct v-else-if="isActiveComponent('AddEditProduct')" :product="edit_product" @delete-product="deleteProduct($event)"></AddEditProduct>
-    <Login v-else-if="isActiveComponent('Login')" @authenticate="authenticate($event)"></Login>
+    <TopBar :cart="cart"></TopBar>
+    <ProductCatalog v-if="IsActiveComponent('ProductCatalog')" :products="products_sorted"></ProductCatalog>
+    <AddEditProduct v-else-if="IsActiveComponent('AddEditProduct')" :product="edit_product"></AddEditProduct>
+    <Login v-else-if="IsActiveComponent('Login')"></Login>
     <div class="my-5"> </div>
     <Footer></Footer>
 </template>
 
 <script>
-import {ref, computed} from "vue";
+import {ref, computed, provide} from "vue";
 import ProductCatalog from "./components/ProductCatalog.vue";
 import AddEditProduct from "./components/AddEditProduct.vue";
 import Login from "./components/Login.vue";
@@ -22,54 +22,55 @@ export default {
     },
     setup() {
         const active_component = ref("ProductCatalog");
-        const authenticated = ref(false);
-
-        function isActiveComponent(name) {
+        function IsActiveComponent(name) {
             return name === active_component.value;
         }
-
-        const product = ref({
-            id: null,
-            name: null,
-            photo: null,
-            price: null,
-            sale_price: null,
-            stock: null,
-            media_type: null,
-            imdb_link: null
-        });
-
-        const cart = ref([]);
+        function ChangeActiveComponent(component) {
+            active_component.value = component;
+        }
 
         const products = ref([]);
         const products_sorted = computed(() => {
             return products.value.sort((a, b) => (a.title > b.title) ? 1 : -1);
         });
 
-        function addToCard(product) {
+        const cart = ref([]);
+        function AddToCart(product) {
             cart.value.push(product)
         }
 
-        function authenticate(credentials) {
+        const authenticated = ref(false);
+        function Authenticate(credentials) {
             authenticated.value = true;
-            active_component.value = "ProductCatalog";
+            ChangeActiveComponent("ProductCatalog");
+        }
+        function Logout() {
+            authenticated.value = false;
         }
 
         const edit_product = ref(null);
-        function editProduct(product) {
+        function EditProduct(product) {
             edit_product.value = product;
-            active_component.value = "AddEditProduct";
+            ChangeActiveComponent('AddEditProduct');
         }
 
-        function deleteProduct(id) {
+        function DeleteProduct(id) {
             if (id !== null && id !== undefined) {
                 let index = products.value.map(product => {
                     return product.id;
                 }).indexOf(id);
                 products.value.splice(index, 1);
             }
-            active_component.value = "ProductCatalog";
+            ChangeActiveComponent('ProductCatalog');
         }
+
+        provide('ChangeActiveComponent', ChangeActiveComponent);
+        provide('AddToCart', AddToCart);
+        provide('Authenticate', Authenticate);
+        provide('Logout', Logout);
+        provide('EditProduct', EditProduct);
+        provide('DeleteProduct', DeleteProduct);
+        provide('authenticated', authenticated);
 
         const xhr = new XMLHttpRequest();
         xhr.open('GET', './products.csv');
@@ -120,14 +121,12 @@ export default {
             active_component,
             products,
             products_sorted,
-            addToCard,
             cart,
-            isActiveComponent,
-            authenticate,
+            IsActiveComponent,
             authenticated,
-            editProduct,
+            EditProduct,
             edit_product,
-            deleteProduct
+            DeleteProduct
         }
     }
 }
