@@ -15,17 +15,20 @@
         <div v-else>
             <h3>Cart is empty.</h3>
         </div>
-        <div v-for="product in cart"  class="col-6">
+        <div v-for="product in cart" class="col-6">
             <div class="row align-items-center">
-                <div class="col-2 text-center"><img :src="ProductImage(product.image)" class="product-image" :alt="product.title"/></div>
+                <div class="col-2 text-center"><img :alt="product.title" :src="ProductImage(product.image)"
+                                                    class="product-image"/></div>
                 <div class="col-3 title">{{ product.title }}</div>
                 <div class="col-3 text-center">
-                    <button class="btn btn-sm" :disabled="!product.quantity" @click="DecreaseQuantity(product)"><i class="bi bi-dash"></i></button>
+                    <button class="btn btn-sm" @click="DecreaseQuantity(product)"><i class="bi bi-dash"></i></button>
                     {{ product.quantity }}
                     <button class="btn btn-sm" @click="IncreaseQuantity(product)"><i class="bi bi-plus"></i></button>
                 </div>
                 <div class="col-2 text-end">{{ (product.sale_price ?? product.price).toFixed(2) }} €</div>
-                <div class="col-2 text-end">{{ ((product.sale_price ?? product.price) * product.quantity).toFixed(2) }} €</div>
+                <div class="col-2 text-end">{{ ((product.sale_price ?? product.price) * product.quantity).toFixed(2) }}
+                    €
+                </div>
             </div>
         </div>
         <div class="col-6">
@@ -84,7 +87,12 @@ export default {
         });
 
         function DecreaseQuantity(product) {
-            if(product.quantity > 0) product.quantity--
+            if (product.quantity > 1) {
+                product.quantity--
+            } else {
+                let index = props.cart.findIndex(el => el.id === product.id);
+                props.cart.splice(index, 1);
+            }
         }
 
         function IncreaseQuantity(product) {
@@ -92,7 +100,7 @@ export default {
         }
 
         function ProductImage(src) {
-            if(src === null) return "images/no_photo_avail.png";
+            if (src === null) return "images/no_photo_avail.png";
             return src;
         }
 

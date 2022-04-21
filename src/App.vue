@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import {ref, computed, provide} from "vue";
+import {ref, computed, provide, watch} from "vue";
 import ProductCatalog from "./components/ProductCatalog.vue";
 import AddEditProduct from "./components/AddEditProduct.vue";
 import Login from "./components/Login.vue";
@@ -38,16 +38,19 @@ export default {
             return products.value.sort((a, b) => (a.title > b.title) ? 1 : -1);
         });
 
-        const cart = ref([]);
+        const cart = ref(JSON.parse(localStorage.getItem('stored_cart')) ?? []);
         function AddToCart(product) {
             let index = cart.value.findIndex(el => el.id === product.id);
             if(index < 0) {
                 product.quantity = 1;
                 cart.value.push(product)
             } else {
-                product.quantity++;
+                cart.value[index].quantity++;
             }
         }
+        watch(cart.value, () => {
+            localStorage.setItem('stored_cart', JSON.stringify(cart.value));
+        });
 
         const authenticated = ref(false);
         function Authenticate(credentials) {
