@@ -4,7 +4,6 @@
     <AddEditProduct v-else-if="IsActiveComponent('AddEditProduct')" :product="edit_product"></AddEditProduct>
     <Cart v-else-if="IsActiveComponent('Cart')" :cart="cart"></Cart>
     <Login v-else-if="IsActiveComponent('Login')"></Login>
-    <div class="my-5"> </div>
     <Footer></Footer>
 </template>
 
