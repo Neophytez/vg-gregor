@@ -2,6 +2,7 @@
     <TopBar :cart="cart"></TopBar>
     <ProductCatalog v-if="IsActiveComponent('ProductCatalog')" :products="products_sorted"></ProductCatalog>
     <AddEditProduct v-else-if="IsActiveComponent('AddEditProduct')" :product="edit_product"></AddEditProduct>
+    <Cart v-else-if="IsActiveComponent('Cart')" :cart="cart"></Cart>
     <Login v-else-if="IsActiveComponent('Login')"></Login>
     <div class="my-5"> </div>
     <Footer></Footer>
@@ -12,13 +13,15 @@ import {ref, computed, provide} from "vue";
 import ProductCatalog from "./components/ProductCatalog.vue";
 import AddEditProduct from "./components/AddEditProduct.vue";
 import Login from "./components/Login.vue";
+import Cart from "./components/Cart.vue";
 
 export default {
     name: "App",
     components: {
         AddEditProduct,
         ProductCatalog,
-        Login
+        Login,
+        Cart
     },
     setup() {
         const active_component = ref("ProductCatalog");
@@ -123,7 +126,7 @@ export default {
                 for (let i = 0; i < header.length; i++) {
                     // parse id, price, sale_price as number, stock as boolean, everything else as string
                     if(['id', 'price', 'sale_price'].includes(header[i])) {
-                        product[header[i]] = Number(item[i]);
+                        product[header[i]] = item[i] ? Number(item[i]) : null;
                     }
                     else if(header[i] === "stock") {
                         product[header[i]] = item[i] === "true";
@@ -154,7 +157,7 @@ export default {
             authenticated,
             EditProduct,
             edit_product,
-            DeleteProduct
+            DeleteProduct,
         }
     }
 }
