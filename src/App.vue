@@ -2,7 +2,7 @@
     <TopBar :cart="cart"></TopBar>
     <ProductCatalog v-if="IsActiveComponent('ProductCatalog')" :products="products_sorted"></ProductCatalog>
     <AddEditProduct v-else-if="IsActiveComponent('AddEditProduct')" :product="edit_product"></AddEditProduct>
-    <Cart v-else-if="IsActiveComponent('Cart')" :cart="cart"></Cart>
+    <Sale v-else-if="IsActiveComponent('Sale')"></Sale>
     <Login v-else-if="IsActiveComponent('Login')"></Login>
     <Footer></Footer>
 </template>
@@ -12,7 +12,7 @@ import {ref, computed, provide, watch} from "vue";
 import ProductCatalog from "./components/ProductCatalog.vue";
 import AddEditProduct from "./components/AddEditProduct.vue";
 import Login from "./components/Login.vue";
-import Cart from "./components/Cart.vue";
+import Sale from "./components/Sale.vue";
 
 export default {
     name: "App",
@@ -20,7 +20,7 @@ export default {
         AddEditProduct,
         ProductCatalog,
         Login,
-        Cart
+        Sale
     },
     setup() {
         const active_component = ref("ProductCatalog");
@@ -103,7 +103,9 @@ export default {
         provide('DeleteProduct', DeleteProduct);
         provide('CreateProduct', CreateProduct);
         provide('UpdateProduct', UpdateProduct);
+
         provide('authenticated', authenticated);
+        provide('cart', cart);
 
         const xhr = new XMLHttpRequest();
         xhr.open('GET', './products.csv');

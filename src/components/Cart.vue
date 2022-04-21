@@ -49,31 +49,28 @@
             </div>
         </div>
         <div v-if="cart_quantity" class="d-flex col-6 justify-content-end">
-            <button class="btn btn-success">Buy</button>
+            <button class="btn btn-success" @click="ChangeActiveComponent('Purchase')">Buy</button>
         </div>
     </div>
 </template>
 
 <script>
-import {computed} from "vue";
+import {computed, inject} from "vue";
 
 export default {
     name: "Cart",
-    props: {
-        cart: {
-            type: Array,
-            required: true
-        }
-    },
-    setup(props) {
+    setup() {
+        const cart = inject('cart');
+        const ChangeActiveComponent = inject('ChangeActiveComponentSale');
+
         const totalPriceDDV = computed(() => {
-            return props.cart.reduce((prev, cur) => {
+            return cart.value.reduce((prev, cur) => {
                 return prev + ((cur.sale_price ?? cur.price) * cur.quantity);
             }, 0).toFixed(2)
         });
 
         const cart_quantity = computed(() => {
-            return props.cart.reduce((prev, cur) => {
+            return cart.value.reduce((prev, cur) => {
                 return prev + cur.quantity;
             }, 0);
         });
@@ -90,8 +87,8 @@ export default {
             if (product.quantity > 1) {
                 product.quantity--
             } else {
-                let index = props.cart.findIndex(el => el.id === product.id);
-                props.cart.splice(index, 1);
+                let index = cart.value.findIndex(el => el.id === product.id);
+                cart.value.splice(index, 1);
             }
         }
 
@@ -111,7 +108,9 @@ export default {
             DecreaseQuantity,
             IncreaseQuantity,
             ProductImage,
-            cart_quantity
+            cart_quantity,
+            cart,
+            ChangeActiveComponent
         }
     }
 }

@@ -15,7 +15,7 @@
                     <button v-if="!authenticated" class="btn btn-outline-light me-3" @click="ChangeActiveComponent('Login')">Login</button>
                     <button v-if="authenticated" class="btn btn-outline-light me-3" @click="ChangeActiveComponent('AddEditProduct', true)">Add product</button>
                     <button v-if="authenticated"  class="btn btn-outline-light me-3" @click="Logout()">Logout</button>
-                    <button class="btn btn-outline-light" @click="ChangeActiveComponent('Cart')"><i class="bi bi-cart-fill"></i> {{cart_quantity}}</button>
+                    <button class="btn btn-outline-light" @click="ChangeActiveComponent('Sale')"><i class="bi bi-cart-fill"></i> {{cart_quantity}}</button>
                 </div>
             </div>
         </div>
