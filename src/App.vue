@@ -10,7 +10,7 @@
 <script>
 import {ref, computed, provide, watch} from "vue";
 import ProductCatalog from "./components/ProductCatalog.vue";
-import AddEditProduct from "./components/AddEditProduct.vue";
+import AddEditProduct from "./components/Product/AddEditProduct.vue";
 import Login from "./components/Login.vue";
 import Sale from "./components/Sale.vue";
 
@@ -95,6 +95,11 @@ export default {
             ChangeActiveComponent("ProductCatalog");
         }
 
+        function ClearCart() {
+            cart.value = [];
+            localStorage.removeItem('stored_cart');
+        }
+
         provide('ChangeActiveComponent', ChangeActiveComponent);
         provide('AddToCart', AddToCart);
         provide('Authenticate', Authenticate);
@@ -103,6 +108,7 @@ export default {
         provide('DeleteProduct', DeleteProduct);
         provide('CreateProduct', CreateProduct);
         provide('UpdateProduct', UpdateProduct);
+        provide('ClearCart', ClearCart);
 
         provide('authenticated', authenticated);
         provide('cart', cart);

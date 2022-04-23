@@ -1,16 +1,18 @@
 <template>
     <Cart v-if="IsActiveComponent('Cart')"></Cart>
     <Purchase v-if="IsActiveComponent('Purchase')"></Purchase>
+    <ThankYou v-if="IsActiveComponent('ThankYou')"></ThankYou>
 </template>
 
 <script>
-import Purchase from "./Purchase.vue";
-import Cart from "./Cart.vue";
+import Purchase from "./Sale/Purchase.vue";
+import Cart from "./Sale/Cart.vue";
 import {provide, ref} from "vue";
+import ThankYou from "./Sale/ThankYou.vue";
 
 export default {
     name: "Sale",
-    components: {Purchase, Cart},
+    components: {ThankYou, Purchase, Cart},
     setup() {
         const active_component = ref("Cart");
         function IsActiveComponent(name) {
@@ -31,17 +33,4 @@ export default {
 </script>
 
 <style scoped>
-.header, .title {
-    font-size: large;
-    font-weight: 500;
-}
-
-.summary {
-    font-weight: 500;
-}
-
-.product-image {
-    max-height: 50px;
-    max-width: 50px;
-}
 </style>

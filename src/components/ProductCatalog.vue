@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import Product from "./elements/Product.vue";
+import Product from "./Product/Product.vue";
 import {computed, ref} from "vue";
 
 export default {
