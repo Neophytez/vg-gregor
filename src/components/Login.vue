@@ -1,10 +1,10 @@
 <template>
     <form class="d-flex flex-column container align-items-center">
-        <div class="col-3 mb-3">
+        <div class="col-sm-3 col-8 mb-3">
             <label class="form-label">Username</label>
             <input v-model="credentials.username" autocomplete="username" class="form-control" type="text"/>
         </div>
-        <div class="col-3 mb-3">
+        <div class="col-sm-3 col-8 mb-3">
             <label class="form-label">Password</label>
             <input v-model="credentials.password" autocomplete="password" class="form-control" type="password"/>
         </div>

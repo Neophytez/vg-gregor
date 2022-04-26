@@ -56,7 +56,7 @@ export default {
 
 .product-image {
     max-height: 200px;
-    max-width: 200px;
+    max-width: 100%;
     border: 1px solid rgba(0, 0, 0, .125);
     border-radius: 0.25rem;
 }

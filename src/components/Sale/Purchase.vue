@@ -1,9 +1,9 @@
 <template>
     <div class="d-flex flex-column container align-items-center">
-        <div class="col-6 mb-3">
+        <div class="col-md-6 col-12 mb-3">
             <h1>PURCHASE</h1>
         </div>
-        <div v-if="cart.length" class="col-6 mb-3">
+        <div v-if="cart.length" class="col-md-6 col-12 mb-3">
             <div class="row header">
                 <div class="col-2"></div>
                 <div class="col-3"></div>
@@ -15,7 +15,7 @@
         <div v-else>
             <h3>Cart is empty.</h3>
         </div>
-        <div v-for="product in cart" class="col-6">
+        <div v-for="product in cart" class="col-md-6 col-12">
             <div class="row align-items-center">
                 <div class="col-2 text-center"><img :alt="product.title" :src="ProductImage(product.image)"
                                                     class="product-image"/></div>
@@ -29,10 +29,10 @@
                 </div>
             </div>
         </div>
-        <div class="col-6">
+        <div class="col-md-6 col-12">
             <hr/>
         </div>
-        <div class="col-6 mb-5 summary">
+        <div class="col-md-6 col-12 mb-5 summary">
             <div class="row justify-content-end">
                 <div class="col-4 bold">Total without VAT</div>
                 <div class="col-3 text-end">{{ totalPrice }} €</div>
@@ -46,11 +46,11 @@
                 <div class="col-3 text-end">{{ totalPriceDDV }} €</div>
             </div>
         </div>
-        <div class="col-8 mb-3">
+        <div class="col-md-6 col-12 mb-3">
             <h3>DELIVERY INFORMATION</h3>
         </div>
-        <div class="row col-8 mb-3">
-            <form class="col-5">
+        <div class="row col-md-6 col-12 mb-3">
+            <form class="col-md-6 col-12">
                 <label>First name</label>
                 <input v-model="customer.first_name" class="form-control" type="text"
                        @blur="customer_preview.first_name = customer.first_name">
@@ -93,7 +93,7 @@
                     {{ errors.email }}
                 </div>
             </form>
-            <div class="col-7">
+            <div class="col-md-6 col-12 mt-4">
                 <div class="card p-3 mb-3">
                     <p>Payment: COD</p>
                     <p>Delivery: Pošta Slovenije</p>

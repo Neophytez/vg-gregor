@@ -12,15 +12,15 @@
                         <a :href="item.url" class="nav-link">{{ item.text }}</a>
                     </li>
                 </ul>
-                <div class="d-flex">
-                    <button v-if="!authenticated" class="btn btn-outline-light me-3"
+                <div class="navbar-nav">
+                    <button v-if="!authenticated" class="btn nav-link"
                             @click="ChangeActiveComponent('Login')">Login
                     </button>
-                    <button v-if="authenticated" class="btn btn-outline-light me-3"
+                    <button v-if="authenticated" class="btn nav-link"
                             @click="ChangeActiveComponent('AddEditProduct', true)">Add product
                     </button>
-                    <button v-if="authenticated" class="btn btn-outline-light me-3" @click="Logout()">Logout</button>
-                    <button class="btn btn-outline-light" @click="ChangeActiveComponent('Sale')"><i
+                    <button v-if="authenticated" class="btn nav-link" @click="Logout()">Logout</button>
+                    <button class="btn nav-link" @click="ChangeActiveComponent('Sale')"><i
                         class="bi bi-cart-fill"></i> {{ cart_quantity }}
                     </button>
                 </div>

@@ -1,38 +1,38 @@
 <template>
     <div class="d-flex flex-column container align-items-center">
-        <div class="col-6">
+        <div class="col-md-6 col-10">
             <h1>{{ action.toUpperCase() }} PRODUCT</h1>
         </div>
-        <div class="col-6 mb-3">
+        <div class="col-md-6 col-10 mb-3">
             <label>Product name</label>
             <input v-model="product.title" class="form-control" type="text">
         </div>
-        <div v-if="photo_url" class="d-flex col-6 justify-content-center">
+        <div v-if="photo_url" class="d-flex col-md-6 col-10 justify-content-center">
             <img :src="photo_url" alt="Product photo" class="p-3 w-50"/>
         </div>
-        <div class="d-flex col-6 justify-content-center">
+        <div class="d-flex col-md-6 col-10 justify-content-center">
             <label class="btn btn-outline-dark">
                 <i class="bi bi-image"></i> Add product photo<input accept="image/png, image/jpeg" name="image" style="display: none;"
                                                                     type="file"
                                                                     @change="PreviewPhoto">
             </label>
         </div>
-        <div class="col-6 mb-3">
+        <div class="col-md-6 col-10 mb-3">
             <label>Price</label>
             <input v-model="product.price" class="form-control" type="number">
         </div>
-        <div class="col-6 mb-3">
+        <div class="col-md-6 col-10 mb-3">
             <label>Sale price</label>
             <input v-model="product.sale_price" class="form-control" type="number">
         </div>
-        <div class="col-6 mb-3">
+        <div class="col-md-6 col-10 mb-3">
             <label>Stock</label>
             <select v-model="product.stock" class="form-select">
                 <option :value="true">In stock</option>
                 <option :value="false">Out of stock</option>
             </select>
         </div>
-        <div class="col-6 mb-3">
+        <div class="col-md-6 col-10 mb-3">
             <label>Media type</label>
             <select v-model="product.media_type" class="form-select">
                 <option value="dvd">DVD</option>
@@ -40,11 +40,11 @@
                 <option value="vhs">VHS</option>
             </select>
         </div>
-        <div class="col-6 mb-3">
+        <div class="col-md-6 col-10 mb-3">
             <label>IMDB link</label>
             <input v-model="product.imdb_link" class="form-control" type="text">
         </div>
-        <div class="d-flex col-6 justify-content-between">
+        <div class="d-flex col-md-6 col-10 justify-content-between">
             <button :disabled="disabled_save" class="btn btn-success" @click="SaveProduct"><i class="bi bi-check"></i>
                 Save
             </button>

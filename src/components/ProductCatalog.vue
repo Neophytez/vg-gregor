@@ -7,7 +7,7 @@
     </div>
     <div class="d-flex container align-items-center">
         <div class="row w-100">
-            <div v-for="product in filtered_products" class="col-3">
+            <div v-for="product in filtered_products" class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <Product :product="product"></Product>
             </div>
         </div>

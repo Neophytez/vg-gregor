@@ -1,9 +1,9 @@
 <template>
     <div class="d-flex flex-column container align-items-center">
-        <div class="col-6 mb-3">
+        <div class="col-md-6 col-12 mb-3">
             <h1>CART</h1>
         </div>
-        <div v-if="cart.length" class="col-6 mb-3">
+        <div v-if="cart.length" class="col-md-6 col-12 mb-3">
             <div class="row header">
                 <div class="col-2"></div>
                 <div class="col-3"></div>
@@ -15,7 +15,7 @@
         <div v-else>
             <h3>Cart is empty.</h3>
         </div>
-        <div v-for="product in cart" class="col-6">
+        <div v-for="product in cart" class="col-md-6 col-12">
             <div class="row align-items-center">
                 <div class="col-2 text-center"><img :alt="product.title" :src="ProductImage(product.image)"
                                                     class="product-image"/></div>
@@ -31,10 +31,10 @@
                 </div>
             </div>
         </div>
-        <div class="col-6">
+        <div class="col-md-6 col-12">
             <hr/>
         </div>
-        <div class="col-6 mb-3 summary">
+        <div class="col-md-6 col-12 mb-3 summary">
             <div class="row justify-content-end">
                 <div class="col-4 bold">Total without VAT</div>
                 <div class="col-3 text-end">{{ totalPrice }} €</div>
@@ -48,7 +48,7 @@
                 <div class="col-3 text-end">{{ totalPriceDDV }} €</div>
             </div>
         </div>
-        <div v-if="cart_quantity" class="d-flex col-6 justify-content-end">
+        <div v-if="cart_quantity" class="d-flex col-md-6 col-12 justify-content-end">
             <button class="btn btn-success" @click="ChangeActiveComponent('Purchase')">Buy</button>
         </div>
     </div>
