@@ -1,7 +1,7 @@
 <template>
     <Cart v-if="IsActiveComponent('Cart')"></Cart>
     <Purchase v-if="IsActiveComponent('Purchase')"></Purchase>
-    <ThankYou v-if="IsActiveComponent('ThankYou')"></ThankYou>
+    <ThankYou v-if="IsActiveComponent('ThankYou')" :summary="summary"></ThankYou>
 </template>
 
 <script>
@@ -23,10 +23,17 @@ export default {
             active_component.value = component;
         }
 
+        const summary = ref([]);
+        function SetCartSummary(cart) {
+            summary.value = cart;
+        }
+
         provide('ChangeActiveComponentSale', ChangeActiveComponent);
+        provide('SetCartSummary', SetCartSummary);
 
         return {
-            IsActiveComponent
+            IsActiveComponent,
+            summary
         }
     }
 }

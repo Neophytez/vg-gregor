@@ -1,8 +1,8 @@
 <template>
     <div class="d-flex flex-column container align-items-center">
         <div class="col-6 mb-3">
-            <h1>THANK YOU FOR YOUR PURCHASE!</h1>
-            <h1>Here is your purchase summary</h1>
+            <h3>THANK YOU FOR THE PURCHASE!</h3>
+            <h5>Below is your purchase summary</h5>
         </div>
         <div class="col-6 mb-3">
             <div class="row header">
@@ -45,43 +45,16 @@
 </template>
 
 <script>
-import {computed, inject, ref} from "vue";
+import {computed, ref} from "vue";
 
 export default {
     name: "ThankYou",
-    setup() {
-        const ClearCart = inject('ClearCart');
-        const cart = ref([...inject('cart').value]);
-
-        const customer = ref({
-            first_name: null,
-            last_name: null,
-            address: null,
-            postal_number: null,
-            post: null,
-            email: null
-        });
-
-        const customer_preview = ref({
-            first_name: null,
-            last_name: null,
-            address: null,
-            postal_number: null,
-            post: null,
-            email: null
-        });
-
-        const errors = ref({
-            first_name: "",
-            last_name: "",
-            address: "",
-            postal_number: "",
-            post: "",
-            email: ""
-        });
+    props: ['summary'],
+    setup(props) {
+        const summary = ref([...props.summary]);
 
         const totalPriceDDV = computed(() => {
-            return cart.value.reduce((prev, cur) => {
+            return summary.value.reduce((prev, cur) => {
                 return prev + ((cur.sale_price ?? cur.price) * cur.quantity);
             }, 0).toFixed(2)
         });
@@ -94,96 +67,16 @@ export default {
             return (totalPriceDDV.value - DDV.value).toFixed(2);
         });
 
-
-        function DecreaseQuantity(product) {
-            if(product.quantity > 0) product.quantity--
-        }
-
-        function IncreaseQuantity(product) {
-            product.quantity++
-        }
-
         function ProductImage(src) {
             if(src === null) return "images/no_photo_avail.png";
             return src;
-        }
-
-        function ResetErrors() {
-            errors.value = {
-                first_name: "",
-                last_name: "",
-                address: "",
-                postal_number: "",
-                post: "",
-                email: ""
-            };
-        }
-
-        function ValidateForm() {
-            ResetErrors();
-
-            let formIsValid = true;
-
-            if(!customer.value.first_name) {
-                errors.value.first_name = "First name is required.";
-                formIsValid = false;
-            }
-
-            if(!customer.value.last_name) {
-                errors.value.last_name = "Last name is required.";
-                formIsValid = false;
-            }
-
-            if(!customer.value.address) {
-                errors.value.address = "Address is required.";
-                formIsValid = false;
-            }
-
-            // Some countries use alphanumeric postal numbers
-            if(!customer.value.postal_number) {
-                errors.value.postal_number = "Postal number is required..";
-                formIsValid = false;
-            }
-
-            if(!customer.value.post) {
-                errors.value.post = "Post is required.";
-                formIsValid = false;
-            }
-
-            if(!customer.value.email) {
-                errors.value.email = "E-mail is required.";
-                formIsValid = false;
-            }
-
-            // copied from https://stackoverflow.com/a/46181
-            else if(!String(customer.value.email).toLowerCase().match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
-                errors.value.email = "E-mail is not valid.";
-                formIsValid = false;
-            }
-
-            return formIsValid;
-        }
-
-        function Submit() {
-            if(!ValidateForm()) return;
-
-            console.log("All good, submit form");
-
-            ClearCart();
         }
 
         return {
             DDV,
             totalPrice,
             totalPriceDDV,
-            DecreaseQuantity,
-            IncreaseQuantity,
             ProductImage,
-            cart,
-            customer,
-            customer_preview,
-            Submit,
-            errors
         }
     }
 }

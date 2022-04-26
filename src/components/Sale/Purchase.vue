@@ -224,8 +224,10 @@ export default {
             return formIsValid;
         }
 
+        const SetCartSummary = inject('SetCartSummary');
         function Submit() {
             if(!ValidateForm()) return;
+            SetCartSummary(cart.value);
             ChangeActiveComponent('ThankYou');
             ClearCart();
         }
