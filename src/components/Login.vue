@@ -27,7 +27,7 @@ export default {
 
         function login() {
             if(!credentials.value.username || !credentials.value.password) return;
-            Authenticate(credentials)
+            Authenticate(credentials.value);
         }
 
         return {

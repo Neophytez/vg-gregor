@@ -53,6 +53,13 @@ export default {
 
         const authenticated = ref(false);
         function Authenticate(credentials) {
+            let username = import.meta.env.VITE_LOGIN_USERNAME;
+            let password = import.meta.env.VITE_LOGIN_PASSWORD;
+
+            if(credentials.username !== username || credentials.password !== password) {
+                return;
+            }
+
             authenticated.value = true;
             ChangeActiveComponent("ProductCatalog");
         }
