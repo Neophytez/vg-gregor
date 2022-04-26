@@ -1,14 +1,14 @@
 <template>
     <form class="d-flex flex-column container align-items-center">
         <div class="col-3 mb-3">
-            <label class="form-label" >Username</label>
-            <input type="text" class="form-control" v-model="credentials.username" autocomplete="username"/>
+            <label class="form-label">Username</label>
+            <input v-model="credentials.username" autocomplete="username" class="form-control" type="text"/>
         </div>
         <div class="col-3 mb-3">
             <label class="form-label">Password</label>
-            <input type="password" class="form-control" v-model="credentials.password" autocomplete="password"/>
+            <input v-model="credentials.password" autocomplete="password" class="form-control" type="password"/>
         </div>
-        <button type="button" class="btn btn-dark" @click="login">Login</button>
+        <button class="btn btn-dark" type="button" @click="login">Login</button>
     </form>
 </template>
 
@@ -26,7 +26,7 @@ export default {
         const Authenticate = inject('Authenticate');
 
         function login() {
-            if(!credentials.value.username || !credentials.value.password) return;
+            if (!credentials.value.username || !credentials.value.password) return;
             Authenticate(credentials.value);
         }
 

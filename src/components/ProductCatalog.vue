@@ -2,7 +2,7 @@
     <div class="d-flex container">
         <div class="d-flex flex-column">
             <label>Search by title</label>
-            <input type="text" class="form-control" v-model="filter">
+            <input v-model="filter" class="form-control" type="text">
         </div>
     </div>
     <div class="d-flex container align-items-center">

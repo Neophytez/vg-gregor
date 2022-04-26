@@ -15,15 +15,18 @@
         <div v-else>
             <h3>Cart is empty.</h3>
         </div>
-        <div v-for="product in cart"  class="col-6">
+        <div v-for="product in cart" class="col-6">
             <div class="row align-items-center">
-                <div class="col-2 text-center"><img :src="ProductImage(product.image)" class="product-image" :alt="product.title"/></div>
+                <div class="col-2 text-center"><img :alt="product.title" :src="ProductImage(product.image)"
+                                                    class="product-image"/></div>
                 <div class="col-3 title">{{ product.title }}</div>
                 <div class="col-3 text-center">
                     {{ product.quantity }}
                 </div>
                 <div class="col-2 text-end">{{ (product.sale_price ?? product.price).toFixed(2) }} €</div>
-                <div class="col-2 text-end">{{ ((product.sale_price ?? product.price) * product.quantity).toFixed(2) }} €</div>
+                <div class="col-2 text-end">{{ ((product.sale_price ?? product.price) * product.quantity).toFixed(2) }}
+                    €
+                </div>
             </div>
         </div>
         <div class="col-6">
@@ -49,37 +52,43 @@
         <div class="row col-8 mb-3">
             <form class="col-5">
                 <label>First name</label>
-                <input type="text" class="form-control" v-model="customer.first_name" @blur="customer_preview.first_name = customer.first_name">
+                <input v-model="customer.first_name" class="form-control" type="text"
+                       @blur="customer_preview.first_name = customer.first_name">
                 <div v-if="errors.first_name" class="invalid">
                     {{ errors.first_name }}
                 </div>
 
                 <label>Last name</label>
-                <input type="text" class="form-control" v-model="customer.last_name" @blur="customer_preview.last_name = customer.last_name">
+                <input v-model="customer.last_name" class="form-control" type="text"
+                       @blur="customer_preview.last_name = customer.last_name">
                 <div v-if="errors.last_name" class="invalid">
                     {{ errors.last_name }}
                 </div>
 
                 <label>Address</label>
-                <input type="text" class="form-control" v-model="customer.address" @blur="customer_preview.address = customer.address">
+                <input v-model="customer.address" class="form-control" type="text"
+                       @blur="customer_preview.address = customer.address">
                 <div v-if="errors.address" class="invalid">
                     {{ errors.address }}
                 </div>
 
                 <label>Postal code</label>
-                <input type="text" class="form-control" v-model="customer.postal_number" @blur="customer_preview.postal_number = customer.postal_number">
+                <input v-model="customer.postal_number" class="form-control" type="text"
+                       @blur="customer_preview.postal_number = customer.postal_number">
                 <div v-if="errors.postal_number" class="invalid">
                     {{ errors.postal_number }}
                 </div>
 
                 <label>Post</label>
-                <input type="text" class="form-control" v-model="customer.post" @blur="customer_preview.post = customer.post">
+                <input v-model="customer.post" class="form-control" type="text"
+                       @blur="customer_preview.post = customer.post">
                 <div v-if="errors.post" class="invalid">
                     {{ errors.post }}
                 </div>
 
                 <label>E-mail</label>
-                <input type="email" class="form-control" v-model="customer.email" @blur="customer_preview.email = customer.email">
+                <input v-model="customer.email" class="form-control" type="email"
+                       @blur="customer_preview.email = customer.email">
                 <div v-if="errors.email" class="invalid">
                     {{ errors.email }}
                 </div>
@@ -89,10 +98,10 @@
                     <p>Payment: COD</p>
                     <p>Delivery: Pošta Slovenije</p>
                     <div class="card p-3 bg-grey">
-                        <p>{{customer_preview.first_name}} {{customer_preview.last_name}}</p>
-                        <p>{{customer_preview.address}}</p>
-                        <p>{{customer_preview.postal_number}} {{customer_preview.post}}</p>
-                        <p>{{customer_preview.email}}</p>
+                        <p>{{ customer_preview.first_name }} {{ customer_preview.last_name }}</p>
+                        <p>{{ customer_preview.address }}</p>
+                        <p>{{ customer_preview.postal_number }} {{ customer_preview.post }}</p>
+                        <p>{{ customer_preview.email }}</p>
                     </div>
                 </div>
                 <div class="text-center">
@@ -156,7 +165,7 @@ export default {
 
 
         function DecreaseQuantity(product) {
-            if(product.quantity > 0) product.quantity--
+            if (product.quantity > 0) product.quantity--
         }
 
         function IncreaseQuantity(product) {
@@ -164,7 +173,7 @@ export default {
         }
 
         function ProductImage(src) {
-            if(src === null) return "images/no_photo_avail.png";
+            if (src === null) return "images/no_photo_avail.png";
             return src;
         }
 
@@ -184,39 +193,39 @@ export default {
 
             let formIsValid = true;
 
-            if(!customer.value.first_name) {
+            if (!customer.value.first_name) {
                 errors.value.first_name = "First name is required.";
                 formIsValid = false;
             }
 
-            if(!customer.value.last_name) {
+            if (!customer.value.last_name) {
                 errors.value.last_name = "Last name is required.";
                 formIsValid = false;
             }
 
-            if(!customer.value.address) {
+            if (!customer.value.address) {
                 errors.value.address = "Address is required.";
                 formIsValid = false;
             }
 
             // Some countries use alphanumeric postal numbers
-            if(!customer.value.postal_number) {
+            if (!customer.value.postal_number) {
                 errors.value.postal_number = "Postal number is required..";
                 formIsValid = false;
             }
 
-            if(!customer.value.post) {
+            if (!customer.value.post) {
                 errors.value.post = "Post is required.";
                 formIsValid = false;
             }
 
-            if(!customer.value.email) {
+            if (!customer.value.email) {
                 errors.value.email = "E-mail is required.";
                 formIsValid = false;
             }
 
             // copied from https://stackoverflow.com/a/46181
-            else if(!String(customer.value.email).toLowerCase().match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
+            else if (!String(customer.value.email).toLowerCase().match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
                 errors.value.email = "E-mail is not valid.";
                 formIsValid = false;
             }
@@ -225,8 +234,9 @@ export default {
         }
 
         const SetCartSummary = inject('SetCartSummary');
+
         function Submit() {
-            if(!ValidateForm()) return;
+            if (!ValidateForm()) return;
             SetCartSummary(cart.value);
             ChangeActiveComponent('ThankYou');
             ClearCart();

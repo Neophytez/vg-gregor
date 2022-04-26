@@ -5,34 +5,36 @@
         </div>
         <div class="col-6 mb-3">
             <label>Product name</label>
-            <input type="text" class="form-control" v-model="product.title">
+            <input v-model="product.title" class="form-control" type="text">
         </div>
         <div v-if="photo_url" class="d-flex col-6 justify-content-center">
-            <img class="p-3 w-50" :src="photo_url" alt="Product photo"/>
+            <img :src="photo_url" alt="Product photo" class="p-3 w-50"/>
         </div>
         <div class="d-flex col-6 justify-content-center">
             <label class="btn btn-outline-dark">
-                <i class="bi bi-image"></i> Add product photo<input type="file" style="display: none;" name="image" accept="image/png, image/jpeg" @change="PreviewPhoto">
+                <i class="bi bi-image"></i> Add product photo<input accept="image/png, image/jpeg" name="image" style="display: none;"
+                                                                    type="file"
+                                                                    @change="PreviewPhoto">
             </label>
         </div>
         <div class="col-6 mb-3">
             <label>Price</label>
-            <input type="number" class="form-control" v-model="product.price">
+            <input v-model="product.price" class="form-control" type="number">
         </div>
         <div class="col-6 mb-3">
             <label>Sale price</label>
-            <input type="number" class="form-control" v-model="product.sale_price">
+            <input v-model="product.sale_price" class="form-control" type="number">
         </div>
         <div class="col-6 mb-3">
             <label>Stock</label>
-            <select class="form-select" v-model="product.stock">
+            <select v-model="product.stock" class="form-select">
                 <option :value="true">In stock</option>
                 <option :value="false">Out of stock</option>
             </select>
         </div>
         <div class="col-6 mb-3">
             <label>Media type</label>
-            <select class="form-select" v-model="product.media_type">
+            <select v-model="product.media_type" class="form-select">
                 <option value="dvd">DVD</option>
                 <option value="bluray">Bluray</option>
                 <option value="vhs">VHS</option>
@@ -40,17 +42,21 @@
         </div>
         <div class="col-6 mb-3">
             <label>IMDB link</label>
-            <input type="text" class="form-control" v-model="product.imdb_link">
+            <input v-model="product.imdb_link" class="form-control" type="text">
         </div>
         <div class="d-flex col-6 justify-content-between">
-            <button :disabled="disabled_save" class="btn btn-success" @click="SaveProduct"><i class="bi bi-check"></i> Save</button>
-            <button v-if="action === 'edit'" class="btn btn-danger" @click="DeleteProduct(product.id)"><i class="bi bi-trash3"></i> Delete</button>
+            <button :disabled="disabled_save" class="btn btn-success" @click="SaveProduct"><i class="bi bi-check"></i>
+                Save
+            </button>
+            <button v-if="action === 'edit'" class="btn btn-danger" @click="DeleteProduct(product.id)"><i
+                class="bi bi-trash3"></i> Delete
+            </button>
         </div>
     </div>
 </template>
 
 <script>
-import {ref, computed, inject, watch} from "vue";
+import {computed, inject, ref, watch} from "vue";
 
 export default {
     name: "AddEditProduct",
@@ -83,7 +89,7 @@ export default {
         })
 
         watch(() => props.product, (newVal) => {
-            if(!newVal) product.value = {
+            if (!newVal) product.value = {
                 id: null,
                 title: null,
                 photo: null,
@@ -102,7 +108,7 @@ export default {
         }
 
         function SaveProduct() {
-            if(product.value.id) {
+            if (product.value.id) {
                 UpdateProduct(product.value);
             } else {
                 CreateProduct(product.value);

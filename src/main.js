@@ -1,4 +1,4 @@
-import { createApp } from 'vue'
+import {createApp} from 'vue'
 import App from './App.vue'
 import TopBar from './components/elements/TopBar.vue';
 import Footer from './components/elements/Footer.vue';

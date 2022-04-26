@@ -1,21 +1,28 @@
 <template>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
         <div class="container-fluid">
-            <img src="@/assets/logo.jpg" alt="VG.Gregor" @click="ChangeActiveComponent('ProductCatalog')">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNavbar" aria-controls="topNavbar" aria-expanded="false" aria-label="Toggle menu">
+            <img alt="VG.Gregor" src="@/assets/logo.jpg" @click="ChangeActiveComponent('ProductCatalog')">
+            <button aria-controls="topNavbar" aria-expanded="false" aria-label="Toggle menu" class="navbar-toggler"
+                    data-bs-target="#topNavbar" data-bs-toggle="collapse" type="button">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="topNavbar">
+            <div id="topNavbar" class="collapse navbar-collapse">
                 <ul class="navbar-nav me-auto mb-2 mx-auto">
-                    <li class="nav-item mx-3" v-for="item in navbar_items">
-                        <a class="nav-link" :href="item.url">{{ item.text }}</a>
+                    <li v-for="item in navbar_items" class="nav-item mx-3">
+                        <a :href="item.url" class="nav-link">{{ item.text }}</a>
                     </li>
                 </ul>
                 <div class="d-flex">
-                    <button v-if="!authenticated" class="btn btn-outline-light me-3" @click="ChangeActiveComponent('Login')">Login</button>
-                    <button v-if="authenticated" class="btn btn-outline-light me-3" @click="ChangeActiveComponent('AddEditProduct', true)">Add product</button>
-                    <button v-if="authenticated"  class="btn btn-outline-light me-3" @click="Logout()">Logout</button>
-                    <button class="btn btn-outline-light" @click="ChangeActiveComponent('Sale')"><i class="bi bi-cart-fill"></i> {{cart_quantity}}</button>
+                    <button v-if="!authenticated" class="btn btn-outline-light me-3"
+                            @click="ChangeActiveComponent('Login')">Login
+                    </button>
+                    <button v-if="authenticated" class="btn btn-outline-light me-3"
+                            @click="ChangeActiveComponent('AddEditProduct', true)">Add product
+                    </button>
+                    <button v-if="authenticated" class="btn btn-outline-light me-3" @click="Logout()">Logout</button>
+                    <button class="btn btn-outline-light" @click="ChangeActiveComponent('Sale')"><i
+                        class="bi bi-cart-fill"></i> {{ cart_quantity }}
+                    </button>
                 </div>
             </div>
         </div>
@@ -23,7 +30,7 @@
 </template>
 
 <script>
-import {inject, ref, computed} from "vue";
+import {computed, inject, ref} from "vue";
 
 export default {
     name: "TopBar",
@@ -42,7 +49,7 @@ export default {
             {
                 text: "BLURAY",
                 url: "#"
-            },{
+            }, {
                 text: "DVD",
                 url: "#"
             },

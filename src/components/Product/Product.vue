@@ -1,7 +1,7 @@
 <template>
     <div class="d-flex flex-column card align-items-center my-3 p-3">
         <img :src="ProductImage(product.image)" alt="Product image" class="product-image"/>
-        <div v-if="sale_proc" class="sale-tag">{{sale_proc}} %</div>
+        <div v-if="sale_proc" class="sale-tag">{{ sale_proc }} %</div>
         <div class="d-flex align-items-center title">{{ product.title }}</div>
         <div class="d-flex justify-content-around price">
             <span :class="{'strike-price': product.sale_price}">{{ product.price }} €</span>
@@ -25,12 +25,12 @@ export default {
     },
     setup(props) {
         const sale_proc = computed(() => {
-            if(!props.product.sale_price || !props.product.price) return null;
+            if (!props.product.sale_price || !props.product.price) return null;
             return Math.round(props.product.sale_price / props.product.price * 100 - 100);
         });
 
         function ProductImage(src) {
-            if(src === null) return "images/no_photo_avail.png";
+            if (src === null) return "images/no_photo_avail.png";
             return src;
         }
 
@@ -57,7 +57,7 @@ export default {
 .product-image {
     max-height: 200px;
     max-width: 200px;
-    border: 1px solid rgba(0,0,0,.125);
+    border: 1px solid rgba(0, 0, 0, .125);
     border-radius: 0.25rem;
 }
 

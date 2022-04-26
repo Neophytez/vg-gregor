@@ -15,6 +15,7 @@ export default {
     components: {ThankYou, Purchase, Cart},
     setup() {
         const active_component = ref("Cart");
+
         function IsActiveComponent(name) {
             return name === active_component.value;
         }
@@ -24,6 +25,7 @@ export default {
         }
 
         const summary = ref([]);
+
         function SetCartSummary(cart) {
             summary.value = cart;
         }

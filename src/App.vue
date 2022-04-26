@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import {ref, computed, provide, watch} from "vue";
+import {computed, provide, ref, watch} from "vue";
 import ProductCatalog from "./components/ProductCatalog.vue";
 import AddEditProduct from "./components/Product/AddEditProduct.vue";
 import Login from "./components/Login.vue";
@@ -24,11 +24,13 @@ export default {
     },
     setup() {
         const active_component = ref("ProductCatalog");
+
         function IsActiveComponent(name) {
             return name === active_component.value;
         }
+
         function ChangeActiveComponent(component, clear = false) {
-            if(clear) edit_product.value = null;
+            if (clear) edit_product.value = null;
             active_component.value = component;
         }
 
@@ -38,36 +40,41 @@ export default {
         });
 
         const cart = ref(JSON.parse(localStorage.getItem('stored_cart')) ?? []);
+
         function AddToCart(product) {
             let index = cart.value.findIndex(el => el.id === product.id);
-            if(index < 0) {
+            if (index < 0) {
                 product.quantity = 1;
                 cart.value.push(product)
             } else {
                 cart.value[index].quantity++;
             }
         }
+
         watch(cart.value, () => {
             localStorage.setItem('stored_cart', JSON.stringify(cart.value));
         });
 
         const authenticated = ref(false);
+
         function Authenticate(credentials) {
             let username = import.meta.env.VITE_LOGIN_USERNAME;
             let password = import.meta.env.VITE_LOGIN_PASSWORD;
 
-            if(credentials.username !== username || credentials.password !== password) {
+            if (credentials.username !== username || credentials.password !== password) {
                 return;
             }
 
             authenticated.value = true;
             ChangeActiveComponent("ProductCatalog");
         }
+
         function Logout() {
             authenticated.value = false;
         }
 
         const edit_product = ref(null);
+
         function EditProduct(product) {
             edit_product.value = product;
             ChangeActiveComponent('AddEditProduct');
@@ -90,13 +97,13 @@ export default {
         }
 
         function GetAvailableId() {
-            if(!products.value.length) return 1;
+            if (!products.value.length) return 1;
             return Math.max.apply(Math, products.value.map(el => el.id)) + 1;
         }
 
         function UpdateProduct(product) {
             const index = products.value.findIndex(el => el.id === product.id);
-            if(index >= 0) {
+            if (index >= 0) {
                 products.value[index] = product;
             }
             ChangeActiveComponent("ProductCatalog");
@@ -132,7 +139,7 @@ export default {
             // iterate lines
             lines.forEach(line => {
                 // skip empty lines
-                if(!line) return;
+                if (!line) return;
 
                 // split line by comma to get item, ignore commas inside quotes
                 // https://stackoverflow.com/questions/11456850/split-a-string-by-commas-but-ignore-commas-within-double-quotes-using-javascript/53774647#53774647
@@ -142,13 +149,11 @@ export default {
                 let product = {};
                 for (let i = 0; i < header.length; i++) {
                     // parse id, price, sale_price as number, stock as boolean, everything else as string
-                    if(['id', 'price', 'sale_price'].includes(header[i])) {
+                    if (['id', 'price', 'sale_price'].includes(header[i])) {
                         product[header[i]] = item[i] ? Number(item[i]) : null;
-                    }
-                    else if(header[i] === "stock") {
+                    } else if (header[i] === "stock") {
                         product[header[i]] = item[i] === "true";
-                    }
-                    else if(header[i] === "title") {
+                    } else if (header[i] === "title") {
                         product[header[i]] = item[i].replace(/["]+/g, '');
                     } else {
                         product[header[i]] = item[i];

@@ -13,15 +13,18 @@
                 <div class="col-2 text-end">Total</div>
             </div>
         </div>
-        <div v-for="product in summary"  class="col-6">
+        <div v-for="product in summary" class="col-6">
             <div class="row align-items-center">
-                <div class="col-2 text-center"><img :src="ProductImage(product.image)" class="product-image" :alt="product.title"/></div>
+                <div class="col-2 text-center"><img :alt="product.title" :src="ProductImage(product.image)"
+                                                    class="product-image"/></div>
                 <div class="col-3 title">{{ product.title }}</div>
                 <div class="col-3 text-center">
                     {{ product.quantity }}
                 </div>
                 <div class="col-2 text-end">{{ (product.sale_price ?? product.price).toFixed(2) }} €</div>
-                <div class="col-2 text-end">{{ ((product.sale_price ?? product.price) * product.quantity).toFixed(2) }} €</div>
+                <div class="col-2 text-end">{{ ((product.sale_price ?? product.price) * product.quantity).toFixed(2) }}
+                    €
+                </div>
             </div>
         </div>
         <div class="col-6">
@@ -68,7 +71,7 @@ export default {
         });
 
         function ProductImage(src) {
-            if(src === null) return "images/no_photo_avail.png";
+            if (src === null) return "images/no_photo_avail.png";
             return src;
         }
 
